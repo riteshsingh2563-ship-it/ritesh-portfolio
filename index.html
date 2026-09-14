@@ -3,490 +3,381 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ritesh Singh — Student, Creative Builder & Web Developer. Building modern web products, exploring AI tools, and scaling digital ventures.">
-  <meta name="theme-color" content="#030712">
-  <title>Ritesh Singh — Developer, Creator &amp; Digital Builder</title>
+  <meta name="description" content="Ritesh Singh — Student, Creator & Digital Builder. Building modern web products, exploring AI tools, and scaling digital ventures.">
+  <meta name="theme-color" content="#2454ff">
+  <title>Ritesh Singh — Creative Developer</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <!-- Ambient Mesh Glow Background -->
-  <div class="ambient-mesh" aria-hidden="true">
-    <div class="mesh-blob-1"></div>
-    <div class="mesh-blob-2"></div>
-    <div class="mesh-blob-3"></div>
-  </div>
+<body class="motion-enabled">
+  <a class="skip-link" href="#main" style="position:fixed;top:10px;left:10px;transform:translateY(-160%);background:var(--blue);color:#fff;padding:12px;z-index:300;">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-  <!-- Floating Island Navigation (Zaid Style — Clean & NO front admin button) -->
-  <nav class="nav-floating-dock">
-    <div class="dock-pill">
-      <a class="dock-brand" href="#top">
-        <div class="dock-brand-avatar">R</div>
-        <span class="user-name">Ritesh Singh</span>
-      </a>
-      <div class="dock-links">
-        <a class="dock-item active" href="#top">Home</a>
-        <a class="dock-item" href="#about">About</a>
-        <a class="dock-item" href="#skills">Stack</a>
-        <a class="dock-item" href="#projects">Work</a>
-        <a class="dock-item" href="#media">Media</a>
-        <a class="dock-item" href="#music">Audio</a>
-        <a class="dock-item" href="#contact">Contact</a>
-      </div>
-      <div class="dock-controls">
-        <button class="dock-btn" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">☼</button>
-      </div>
+  <!-- SVG Fluid Ink-Warp Filter (Exact Zaid Kinetic Filter) -->
+  <svg class="filter-defs" aria-hidden="true">
+    <defs>
+      <filter id="ink-warp" x="-10%" y="-20%" width="120%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency=".008 .045" numOctaves="1" seed="4" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" id="warpMap" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Site Navigation Header (NO front admin button) -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Ritesh Singh home">Ritesh<span>®</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#projects">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Expertise</a>
+      <a href="#audio">Audio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Switch theme">
+        <span aria-hidden="true">☼</span>
+      </button>
+      <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation menu">☰</button>
     </div>
-  </nav>
+    <nav class="mobile-nav" id="mobileMenu" aria-label="Mobile navigation" hidden>
+      <a href="#projects">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Expertise</a>
+      <a href="#audio">Audio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <main id="top">
-    <!-- Hero Section: Modern Bento Grid -->
-    <section class="hero-bento">
+  <main id="main">
+    <!-- Hero Section (Giant Kinetic Wave & Liquid Typography) -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="hero-kicker">
+        <span>STUDENT &bull; CREATIVE BUILDER</span>
+        <span>EXPERIMENTING &bull; 2026</span>
+      </div>
+
+      <h1 id="hero-title">
+        <span class="hero-word" aria-label="Creative">
+          <span class="hero-letter" aria-hidden="true" style="--letter:0">C</span>
+          <span class="hero-letter" aria-hidden="true" style="--letter:1">R</span>
+          <span class="hero-letter" aria-hidden="true" style="--letter:2">E</span>
+          <span class="hero-letter" aria-hidden="true" style="--letter:3">A</span>
+          <span class="hero-letter" aria-hidden="true" style="--letter:4">T</span>
+          <span class="hero-letter" aria-hidden="true" style="--letter:5">I</span>
+          <span class="hero-letter" aria-hidden="true" style="--letter:6">V</span>
+          <span class="hero-letter" aria-hidden="true" style="--letter:7">E</span>
+        </span>
+        <span class="hero-role">DEVELOPER</span>
+      </h1>
+
+      <div class="hero-bottom">
+        <p>Student builder &amp; web developer.<br>Based in India.</p>
+        <a class="explore" href="#projects">
+          EXPLORE MY WORK <span aria-hidden="true">↓</span>
+        </a>
+        <p class="hero-note">Websites.<br>AI Tools. Media.</p>
+      </div>
+
+      <div class="hero-rule">
+        <span>CODE</span>
+        <span>VENTURES</span>
+        <span>MEDIA EXPERIMENTATION</span>
+      </div>
+    </section>
+
+    <!-- About Section (Iconic Blue Rotated Name Panel) -->
+    <section class="section about" id="about" aria-labelledby="about-title">
       <div class="container">
-        <div class="bento-grid-hero">
-          
-          <!-- Bento Card 1: Main Introduction -->
-          <div class="bento-card-main reveal" data-glow>
-            <div>
-              <div class="status-beacon-wrap">
-                <span class="beacon-dot"></span>
-                <span id="heroStatusPill">OPEN TO INTERNSHIPS, PROJECTS &amp; COLLABORATIONS</span>
-              </div>
-              <h1 class="hero-headline">
-                Building Modern Web Products, <span class="gradient-text">AI Systems</span> &amp; Digital Ventures.
-              </h1>
-              <p class="hero-lead" id="heroHeadline">
-                Student, Web Developer &amp; Creative Builder based in India. Crafting high-performance websites, experimenting with AI workflows, and building real-world digital projects.
+        <div class="section-label">
+          <span>01 // A LITTLE ABOUT ME</span>
+          <span>CURIOUS &bull; RESOURCEFUL</span>
+        </div>
+
+        <div class="about-grid">
+          <!-- Rotated Blue Name Panel with Holographic Light Sweep -->
+          <div class="name-panel reveal" aria-hidden="true">
+            <span>RITESH</span>
+            <strong>SINGH.</strong>
+            <span>STUDENT. BUILDER. EXPLORER.</span>
+          </div>
+
+          <div class="about-copy">
+            <h2 id="about-title" class="reveal">
+              Hi, I’m Ritesh.<br>I build <em>websites<br>and digital ventures.</em>
+            </h2>
+            <div class="about-columns">
+              <p id="aboutPrimaryBio">
+                I'm a student from India with an intense curiosity for how technology, business, and media intersect. Rather than just following tutorials, I learn by building practical products, testing agency ideas, and deploying real code.
+              </p>
+              <p id="aboutSubBio">
+                From launching web brands like WEBZA to designing AI agency concepts with NEXVIX MEDIA and experimenting with APK builds and Razorpay payment flows, I treat every project as a real-world testing ground.
               </p>
             </div>
-
-            <div class="hero-actions-row">
-              <a class="btn btn-primary" href="#projects">
-                Explore Selected Work ↓
-              </a>
-              <a class="btn btn-secondary resume-download-link" href="assets/Ritesh-Singh-Resume.pdf" download="Ritesh-Singh-Resume.pdf">
-                Download Resume (PDF)
-              </a>
-              <a class="btn btn-secondary" id="githubHeroLink" href="https://github.com/riteshsingh02010" target="_blank" rel="noopener noreferrer">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                GitHub ↗
-              </a>
-            </div>
-          </div>
-
-          <!-- Bento Card 2: Interactive Terminal Console -->
-          <div class="bento-card-terminal reveal delay-1" data-glow>
-            <div class="terminal-header">
-              <div class="terminal-dots">
-                <span class="terminal-dot dot-r"></span>
-                <span class="terminal-dot dot-y"></span>
-                <span class="terminal-dot dot-g"></span>
-              </div>
-              <span>bash &bull; ritesh@builder:~</span>
-            </div>
-            <div class="terminal-code">
-              <div><span class="t-prompt">ritesh@sys:~$</span> <span class="t-cmd">cat profile.json</span></div>
-              <div class="t-out">
-                {<br>
-                &nbsp;&nbsp;"name": "<span class="t-val">Ritesh Singh</span>",<br>
-                &nbsp;&nbsp;"role": "<span class="t-val">Student &amp; Web Builder</span>",<br>
-                &nbsp;&nbsp;"focus": ["<span class="t-val">Web Dev</span>", "<span class="t-val">AI Tools</span>", "<span class="t-val">Digital Media</span>"],<br>
-                &nbsp;&nbsp;"status": "<span class="t-val">Active &bull; Building in Public</span>"<br>
-                }
-              </div>
-              <div><span class="t-prompt">ritesh@sys:~$</span> <span class="t-cmd">git log -n 1 --oneline</span></div>
-              <div class="t-out"><span style="color:var(--cyan)">cc6e3ef</span> feat: personal developer portfolio &amp; CMS</div>
-              <div><span class="t-prompt">ritesh@sys:~$</span> <span class="t-cmd">node --status</span></div>
-              <div class="t-out"><span style="color:var(--emerald);">[ONLINE]</span> Systems responsive &bull; Ready<span class="t-cursor"></span></div>
-            </div>
-          </div>
-
-          <!-- Bento Card 3: Metrics & Real Stats -->
-          <div class="bento-card-stats reveal delay-2" data-glow>
-            <div class="stat-item">
-              <span class="stat-num" id="statProjectsCount">10+</span>
-              <span class="stat-label">Built Projects &amp; Ventures</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">100%</span>
-              <span class="stat-label">Hands-On Code Execution</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">2026</span>
-              <span class="stat-label">Current Release</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">IN &bull; 🇮🇳</span>
-              <span class="stat-label">Based in India</span>
-            </div>
-          </div>
-
-          <!-- Bento Card 4: Soundscapes Audio Card -->
-          <div class="bento-card-audio reveal delay-2" id="heroAudioCard" data-glow>
-            <div class="audio-top-row">
-              <img class="audio-thumb" id="heroAudioThumb" src="assets/images/track-chill.svg" alt="Track artwork">
-              <div class="audio-meta">
-                <h4 id="heroTrackTitle">Midnight Focus</h4>
-                <p id="heroTrackArtist">Lo-Fi Coding Beats &bull; 0:10</p>
-              </div>
-              <div class="equalizer-bars" id="equalizerVisualizer">
-                <div class="eq-bar"></div>
-                <div class="eq-bar"></div>
-                <div class="eq-bar"></div>
-                <div class="eq-bar"></div>
-              </div>
-            </div>
-
-            <div class="audio-controls-row">
-              <button class="audio-play-btn" id="heroAudioPlayBtn" type="button" aria-label="Play Track">▶</button>
-              <div class="audio-scrubber-track" id="heroAudioScrubber">
-                <div class="audio-scrubber-fill" id="heroAudioFill"></div>
-              </div>
-              <span style="font-family:var(--font-mono); font-size:12px; color:var(--text-dim);" id="heroAudioTime">0:00</span>
-            </div>
-          </div>
-
-          <!-- Bento Card 5: GitHub Pulse & Connect -->
-          <div class="bento-card-github reveal delay-3" data-glow>
-            <div class="gh-header">
-              <div class="gh-user">
-                <svg class="gh-logo-svg" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                <div>
-                  <div class="gh-title">github.com/riteshsingh02010</div>
-                  <div class="gh-sub">Public Repositories &amp; Commits</div>
-                </div>
-              </div>
-              <span style="font-size:11px; font-family:var(--font-mono); color:var(--emerald);">[SYNCED]</span>
-            </div>
-            <p style="font-size:13.5px; color:var(--text-muted); line-height:1.5;">
-              Active student builder experimenting with Next.js, Node.js, SQLite, AI pipelines, and mobile cross-platform systems.
-            </p>
-            <div style="display:flex; justify-content:flex-end; margin-top:14px;">
-              <a class="card-link" href="https://github.com/riteshsingh02010" target="_blank" rel="noopener noreferrer">
-                Open GitHub Profile ↗
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- About & Mindset Section -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-label">01 // ABOUT RITESH</div>
-        <div class="section-header">
-          <h2 class="section-title">Curious. Resourceful. Driven by Execution.</h2>
-          <p class="section-desc">Combining software engineering, digital marketing, and multimedia production into real-world products.</p>
-        </div>
-
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:20px;">
-          <div class="bento-card-main reveal" data-glow style="min-height:auto; padding:36px;">
-            <div class="section-label" style="color:var(--cyan)">ENGINEERING PHILOSOPHY</div>
-            <h3 style="font-size:22px; font-weight:700; margin-bottom:12px; color:var(--text-main);">Practical Hands-On Builder</h3>
-            <p id="aboutPrimaryBio" style="font-size:15px; color:var(--text-muted); line-height:1.7; margin-bottom:20px;">
-              Ritesh is a student passionately exploring technology, AI, modern web development, digital business, and content creation. He actively learns by building real-world projects, testing business concepts, editing media, and mastering software development tools.
-            </p>
-            <div style="display:flex; gap:12px; font-family:var(--font-mono); font-size:12px; color:var(--cyan);">
-              <span>[STACK: REACT / NEXT.JS]</span>
-              <span style="color:var(--emerald)">[TOOLS: GIT / SQLITE]</span>
-            </div>
-          </div>
-
-          <div class="bento-card-main reveal delay-1" data-glow style="min-height:auto; padding:36px;">
-            <div class="section-label" style="color:var(--purple)">ENTREPRENEURIAL MINDSET</div>
-            <h3 style="font-size:22px; font-weight:700; margin-bottom:12px; color:var(--text-main);">Ventures &amp; Creative Media</h3>
-            <p id="aboutSubBio" style="font-size:15px; color:var(--text-muted); line-height:1.7; margin-bottom:20px;">
-              From architecting digital web brands like WEBZA and agency ventures like NEXVIX MEDIA to developing cross-platform applications and exploring Razorpay payment gateway mechanics, Ritesh bridges technical execution with entrepreneurial thinking.
-            </p>
-            <div style="display:flex; gap:12px; font-family:var(--font-mono); font-size:12px; color:var(--purple);">
-              <span>[VENTURES: WEBZA / NEXVIX]</span>
-              <span style="color:var(--amber)">[MEDIA: CAPCUT / CANVA]</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills & Stack Section -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-label">02 // CAPABILITIES &amp; STACK</div>
-        <div class="section-header">
-          <h2 class="section-title">Technical Skills &amp; Platforms Explored</h2>
-          <p class="section-desc">Disciplines, frameworks, and AI workflows practiced through active experimentation.</p>
-        </div>
-
-        <div class="skills-bento-grid" id="skillsGrid"></div>
-      </div>
-    </section>
-
-    <!-- Selected Work & Ventures Section -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-label">03 // SELECTED WORK &amp; VENTURES</div>
-        <div class="section-header">
-          <h2 class="section-title">Real Projects, Agency Ventures &amp; Concepts</h2>
-          <p class="section-desc">Every entry reflects an actual built product, learning study, or business concept.</p>
-        </div>
-
-        <!-- Category Filters -->
-        <div class="filter-tabs-bar">
-          <button class="filter-tab active" data-filter="all">All Work</button>
-          <button class="filter-tab" data-filter="web">Web Brands</button>
-          <button class="filter-tab" data-filter="agency">AI &amp; Agency</button>
-          <button class="filter-tab" data-filter="apps">Apps &amp; Systems</button>
-          <button class="filter-tab" data-filter="media">Media &amp; Video</button>
-        </div>
-
-        <!-- Projects Bento Grid -->
-        <div class="projects-bento-grid" id="projectsGrid"></div>
-      </div>
-    </section>
-
-    <!-- Media & Creative Lab Section -->
-    <section class="section" id="media">
-      <div class="container">
-        <div class="section-label">04 // CONTENT CREATION &amp; VIDEO LAB</div>
-        <div class="section-header">
-          <h2 class="section-title">YouTube, Shorts &amp; Video Production</h2>
-          <p class="section-desc">Treating short-form content creation and audience retention as an engineering discipline.</p>
-        </div>
-
-        <div class="media-grid">
-          <div class="media-card reveal" data-glow>
-            <div class="media-tag">RETENTION ENGINEERING</div>
-            <h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">Shorts &amp; Anime Edits</h3>
-            <p style="font-size:14px; color:var(--text-muted); line-height:1.6;">
-              Vertical video editing with fast rhythmic cuts, sound effect emphasis, and music beat alignment to capture audience attention in the first 2 seconds.
-            </p>
-          </div>
-
-          <div class="media-card reveal delay-1" data-glow>
-            <div class="media-tag">POST-PRODUCTION</div>
-            <h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">CapCut Editing &amp; Pacing</h3>
-            <p style="font-size:14px; color:var(--text-muted); line-height:1.6;">
-              Speed ramping, dynamic motion keyframes, auto-captions, and visual punch-ins to maintain 100%+ viewer retention on vertical algorithms.
-            </p>
-          </div>
-
-          <div class="media-card reveal delay-2" data-glow>
-            <div class="media-tag">VISUAL ARCHITECTURE</div>
-            <h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">Thumbnail Composition</h3>
-            <p style="font-size:14px; color:var(--text-muted); line-height:1.6;">
-              Designing high-contrast, clean focal point graphics with bold typography and psychological color triggers in Canva to maximize click-through rate.
-            </p>
-          </div>
-
-          <div class="media-card reveal delay-3" data-glow>
-            <div class="media-tag">ALGORITHMIC SEO</div>
-            <h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">Metadata &amp; Retention Analytics</h3>
-            <p style="font-size:14px; color:var(--text-muted); line-height:1.6;">
-              Analyzing viewer drop-off analytics, A/B testing hook titles, optimizing tags, and reverse-engineering algorithmic distribution mechanics.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Audio Showcase Section -->
-    <section class="section" id="music">
-      <div class="container">
-        <div class="section-label">05 // AUDIO &amp; MUSIC SHOWCASE</div>
-        <div class="section-header">
-          <h2 class="section-title">Soundscapes &amp; Focus Beats</h2>
-          <p class="section-desc">Curated audio atmospheres for deep coding and creative sessions.</p>
-        </div>
-
-        <div class="bento-card-main reveal" data-glow style="min-height:auto; padding:36px;">
-          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:32px; align-items:center;">
-            <div>
-              <div style="display:flex; align-items:center; gap:16px; margin-bottom:20px;">
-                <img id="mainPlayerArtwork" src="assets/images/track-chill.svg" alt="Track artwork" style="width:72px; height:72px; border-radius:var(--radius-md); object-fit:cover; border:1px solid rgba(255,255,255,0.1);">
-                <div>
-                  <h3 id="mainPlayerTitle" style="font-size:20px; font-weight:800; color:var(--text-main);">Midnight Focus</h3>
-                  <p id="mainPlayerArtist" style="font-size:13.5px; color:var(--text-muted);">Ritesh Singh &bull; Lo-Fi Coding Beats</p>
-                </div>
-              </div>
-
-              <div style="margin-bottom:18px;">
-                <div class="audio-scrubber-track" id="mainPlayerScrubber" style="height:7px;">
-                  <div class="audio-scrubber-fill" id="mainPlayerFill"></div>
-                </div>
-                <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:12px; color:var(--text-dim); margin-top:8px;">
-                  <span id="mainPlayerCurrentTime">0:00</span>
-                  <span id="mainPlayerDurationTime">0:10</span>
-                </div>
-              </div>
-
-              <div style="display:flex; align-items:center; gap:14px;">
-                <button class="btn btn-glow" id="mainPlayerPlayBtn" type="button">
-                  ▶ Play Soundscape
-                </button>
-              </div>
-            </div>
-
-            <div>
-              <div class="section-label" style="margin-bottom:10px;">PLAYLIST SELECTION</div>
-              <div id="fullTrackList" style="display:flex; flex-direction:column; gap:8px;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume Banner Section -->
-    <section class="section" id="resume">
-      <div class="container">
-        <div class="resume-banner reveal" data-glow>
-          <div class="resume-info">
-            <div class="section-label">CURRICULUM VITAE</div>
-            <h3>Ritesh Singh — Official Resume</h3>
-            <p>Official curriculum vitae detailing web engineering, AI tools explored, and real projects.</p>
-            <div style="font-family:var(--font-mono); font-size:12px; color:var(--cyan); margin-top:8px;">
-              LAST REVISED: <span id="resumeLastUpdated">September 2026</span> &bull; FORMAT: PDF
-            </div>
-          </div>
-          <div style="display:flex; gap:12px; flex-wrap:wrap;">
-            <a class="btn btn-primary resume-download-link" href="assets/Ritesh-Singh-Resume.pdf" download="Ritesh-Singh-Resume.pdf">
-              Download PDF Resume ↓
-            </a>
-            <a class="btn btn-secondary resume-download-link" href="assets/Ritesh-Singh-Resume.pdf" target="_blank" rel="noopener noreferrer">
-              View in Browser ↗
+            <a class="text-link resume-download-link" href="assets/Ritesh-Singh-Resume.pdf" download="Ritesh-Singh-Resume.pdf">
+              Download my resume <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section" id="contact">
+    <!-- Expertise & Floating Tool Orbit Section -->
+    <section class="section expertise" id="skills" aria-labelledby="skills-title">
       <div class="container">
-        <div class="section-label">06 // GET IN TOUCH</div>
-        <div class="section-header">
-          <h2 class="section-title">Start a Conversation.</h2>
-          <p class="section-desc">Reach out for internships, project collaborations, or discussing digital ventures.</p>
+        <div class="section-label">
+          <span>02 // MY TOOLKIT</span>
+          <span>SKILLS &bull; STACK</span>
         </div>
 
-        <div class="contact-layout">
-          <div class="contact-card-info reveal" data-glow>
-            <div>
-              <h3 style="font-size:20px; font-weight:700; margin-bottom:8px;">Direct Communication</h3>
-              <p style="font-size:14.5px; color:var(--text-muted); line-height:1.6;">
-                Whether you're looking for a student developer with a sharp product sense, or want to collaborate on web and AI projects, feel free to drop a message.
-              </p>
+        <div class="expertise-grid">
+          <div>
+            <h2 id="skills-title" class="reveal">
+              WHAT I<br><em>WORK WITH.</em>
+            </h2>
+            <p class="expertise-intro">
+              I build web products and experiment with modern AI automation. These are the tools I use and disciplines I practice.
+            </p>
 
-              <div class="contact-channels">
-                <div class="contact-item">
-                  <div class="contact-item-icon">✉</div>
-                  <div>
-                    <div style="font-size:12px; color:var(--text-dim); font-family:var(--font-mono);">EMAIL</div>
-                    <a class="user-email" href="mailto:Riteshsingh02010@gmail.com" style="color:var(--cyan); text-decoration:none; font-weight:600;">Riteshsingh02010@gmail.com</a>
-                  </div>
-                </div>
-
-                <div class="contact-item">
-                  <div class="contact-item-icon">☎</div>
-                  <div>
-                    <div style="font-size:12px; color:var(--text-dim); font-family:var(--font-mono);">PHONE</div>
-                    <a class="user-phone" href="tel:+917898195460" style="color:var(--text-main); text-decoration:none; font-weight:600;">+91 7898195460</a>
-                  </div>
-                </div>
-
-                <div class="contact-item">
-                  <div class="contact-item-icon">📍</div>
-                  <div>
-                    <div style="font-size:12px; color:var(--text-dim); font-family:var(--font-mono);">LOCATION</div>
-                    <span style="color:var(--text-main); font-weight:600;">India</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div style="font-size:12px; font-family:var(--font-mono); color:var(--text-dim); margin-top:24px;">
-              RESPONSE TIME: &lt; 24 HOURS
+            <!-- Floating 3D Tool Orbit Badges -->
+            <div class="tool-orbit" aria-label="Core tools">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+              <span>GIT</span>
+              <span>AI</span>
             </div>
           </div>
 
-          <!-- Contact Form Card -->
-          <div class="contact-form-card reveal delay-1" data-glow>
-            <form id="contactForm">
-              <div class="form-group">
-                <label for="contactName">Your Name</label>
-                <input class="form-input" id="contactName" required minlength="2" placeholder="Jane Doe">
+          <!-- Expandable Expertise Accordion -->
+          <div class="expertise-list">
+            <details open>
+              <summary><span>01</span>Web development<i aria-hidden="true">+</i></summary>
+              <div class="expertise-detail">
+                <p>Responsive web interfaces, agency brands like WEBZA, and modular layouts built with semantic HTML, CSS, and modern JavaScript.</p>
+                <span class="skill-meta">HTML5 / CSS3 / JAVASCRIPT / DESIGN SYSTEMS</span>
               </div>
+            </details>
 
-              <div class="form-group">
-                <label for="contactEmail">Email Address</label>
-                <input class="form-input" id="contactEmail" type="email" required placeholder="jane@example.com">
+            <details>
+              <summary><span>02</span>AI Tools &amp; Product Pipelines<i aria-hidden="true">+</i></summary>
+              <div class="expertise-detail">
+                <p>Building applications with Gemini, ChatGPT, and Google Antigravity to automate marketing workflows, generate copy, and speed up development.</p>
+                <span class="skill-meta">GEMINI / PROMPT DESIGN / AUTOMATION / ANTIGRAVITY</span>
               </div>
+            </details>
 
-              <div class="form-group">
-                <label for="contactMessage">Message</label>
-                <textarea class="form-input" id="contactMessage" rows="4" required minlength="10" placeholder="Tell Ritesh about your project or opportunity..."></textarea>
+            <details>
+              <summary><span>03</span>Video &amp; Creative Media Lab<i aria-hidden="true">+</i></summary>
+              <div class="expertise-detail">
+                <p>High-retention vertical video editing, CapCut motion pacing, anime edits, and high-CTR thumbnail compositions in Canva.</p>
+                <span class="skill-meta">CAPCUT / CANVA / RETENTION EDITING / YOUTUBE SHORTS</span>
               </div>
+            </details>
 
-              <button class="btn btn-primary" type="submit" id="contactSubmitBtn" style="width:100%; justify-content:center;">
-                Send Message →
-              </button>
-
-              <div class="alert-box alert-success" id="contactSuccessAlert" hidden></div>
-              <div class="alert-box alert-error" id="contactErrorAlert" hidden></div>
-            </form>
+            <details>
+              <summary><span>04</span>Backend, Mobile &amp; Systems<i aria-hidden="true">+</i></summary>
+              <div class="expertise-detail">
+                <p>Developing standalone Android APK packages (Aura App), local SQLite backends, and understanding Razorpay payment gateway integrations.</p>
+                <span class="skill-meta">NODE.JS / EXPRESS / SQLITE / ANDROID APK / RAZORPAY</span>
+              </div>
+            </details>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Work Section (Massive WORK® Title & Interactive Editorial Covers) -->
+    <section class="work-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-label">
+          <span>03 // SELECTED PROJECTS</span>
+          <span>BUILT &bull; EXPERIMENTS</span>
+        </div>
+
+        <div class="work-heading">
+          <p>A few things<br>I’ve built.</p>
+          <h2 id="projects-title">WORK<span aria-hidden="true">®</span></h2>
+          <span class="work-count" id="workCountDisplay">01—10</span>
+        </div>
+
+        <!-- Filter Chips Bar -->
+        <div class="filter-bar" role="toolbar" aria-label="Filter projects">
+          <button class="filter-chip active" data-filter="all" type="button">All work</button>
+          <button class="filter-chip" data-filter="web" type="button">Web Brands</button>
+          <button class="filter-chip" data-filter="agency" type="button">AI &amp; Agency</button>
+          <button class="filter-chip" data-filter="apps" type="button">Apps &amp; Systems</button>
+          <button class="filter-chip" data-filter="media" type="button">Media &amp; Video</button>
+        </div>
+
+        <!-- Project Grid with In-place Expanding Accordions -->
+        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+
+        <p class="empty-state" id="projectsEmpty" hidden style="padding:25px;border:1px solid var(--line);margin-top:20px;">
+          No projects match that filter.
+        </p>
+
+        <a class="all-code text-link" href="https://github.com/riteshsingh02010" target="_blank" rel="noopener noreferrer" style="margin-top:40px;">
+          More on GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Soundscapes Deck Section -->
+    <section class="section" id="audio" aria-labelledby="audio-title">
+      <div class="container">
+        <div class="section-label">
+          <span>04 // AUDIO &amp; FOCUS BEATS</span>
+          <span>CURATED SOUNDSCAPES</span>
+        </div>
+
+        <div class="soundscape-deck reveal">
+          <div>
+            <div class="audio-controls-top">
+              <div class="audio-artwork-box">
+                <img id="audioPlayerArtwork" src="assets/images/track-chill.svg" alt="Track artwork">
+              </div>
+              <div>
+                <h3 id="audioPlayerTitle" style="font-size:24px; font-weight:700; margin-bottom:4px;">Midnight Focus</h3>
+                <p id="audioPlayerArtist" style="color:var(--muted); font-size:14px; margin:0;">Ritesh Singh &bull; Lo-Fi Coding Beats</p>
+              </div>
+            </div>
+
+            <div class="audio-scrubber-bar" id="audioScrubberBar">
+              <div class="audio-scrubber-fill" id="audioScrubberFill"></div>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-family:var(--mono); font-size:12px; color:var(--muted); margin-bottom:20px;">
+              <span id="audioCurTime">0:00</span>
+              <span id="audioDurTime">0:10</span>
+            </div>
+
+            <button class="btn btn-primary" id="audioPlayToggleBtn" type="button">
+              Play Soundscape <span aria-hidden="true">▶</span>
+            </button>
+          </div>
+
+          <div>
+            <p class="eyebrow" style="margin-bottom:12px;">TRACK SELECTION</p>
+            <div id="audioPlaylistWrap" style="display:grid; gap:8px;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (Editorial Minimalist Underline Form) -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Have an idea?<br>Let's make it <em>real.</em></h2>
+          </div>
+          <div class="contact-card">
+            <a class="user-email" href="mailto:Riteshsingh02010@gmail.com">
+              <span class="contact-label">Email</span>
+              <span>Riteshsingh02010@gmail.com</span>
+            </a>
+            <a class="user-phone" href="tel:+917898195460">
+              <span class="contact-label">Phone</span>
+              <span>+91 7898195460</span>
+            </a>
+            <a class="resume-link resume-download-link" href="assets/Ritesh-Singh-Resume.pdf" download="Ritesh-Singh-Resume.pdf">
+              <span class="contact-label">Resume</span>
+              <span>Download resume <span aria-hidden="true">↗</span></span>
+            </a>
+            <a>
+              <span class="contact-label">Location</span>
+              <span>India &bull; Available for Remote &amp; Collaborations</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Working Contact Form (Connected to SQLite DB) -->
+        <form class="contact-form" id="contactForm">
+          <div class="form-field">
+            <label for="contactName">Name</label>
+            <input id="contactName" name="name" required minlength="2" placeholder="Your name">
+          </div>
+
+          <div class="form-field">
+            <label for="contactEmail">Email</label>
+            <input id="contactEmail" name="email" type="email" required placeholder="you@example.com">
+          </div>
+
+          <div class="form-field">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="4" required minlength="10" placeholder="Tell me about your project or opportunity..."></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit" id="contactSubmitBtn">
+            Send message <span aria-hidden="true">→</span>
+          </button>
+
+          <p class="success-message" id="formSuccess" role="status" hidden>
+            Thanks for reaching out. Your message has been saved and delivered to Ritesh.
+          </p>
+          <p style="color:#ed7489; font-size:13px; margin:0;" id="formError" hidden></p>
+        </form>
       </div>
     </section>
   </main>
 
-  <!-- Clean Footer (No Admin Button) -->
+  <!-- Site Footer (NO ADMIN LINK) -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <span>&copy; <span id="year">2026</span> <strong class="user-name">Ritesh Singh</strong>. Built with precision.</span>
-      </div>
-      <div class="footer-links">
-        <a class="user-email" href="mailto:Riteshsingh02010@gmail.com">Email</a>
-        <a href="https://github.com/riteshsingh02010" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand" href="#home">Ritesh<span>®</span></a>
+        <div>
+          <a href="https://github.com/riteshsingh02010" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a class="user-email" href="mailto:Riteshsingh02010@gmail.com">Email ↗</a>
+        </div>
         <a href="#top">Back to top ↑</a>
+      </div>
+      <div class="footer-inner">
+        <p>&copy; <span id="year">2026</span> Ritesh Singh. Built with craft.</p>
+        <p>Thanks for stopping by.</p>
       </div>
     </div>
   </footer>
 
   <!-- Project Inspection Modal Dialog -->
-  <dialog class="modal-dialog" id="projectModal">
-    <div class="modal-content-shell">
-      <button class="modal-close-btn" id="modalClose" type="button" aria-label="Close dialog">✕</button>
-      <div id="modalMedia" style="margin-bottom:20px;"></div>
-      <div class="section-label" id="modalCategory" style="margin-bottom:6px;">CATEGORY</div>
-      <h2 id="modalTitle" style="font-size:26px; font-weight:800; margin-bottom:12px; color:var(--text-main);">Project Title</h2>
-      <p id="modalDescription" style="color:var(--text-muted); font-size:15px; line-height:1.65; margin-bottom:20px;"></p>
-
-      <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:24px;" id="modalTech"></div>
-
-      <div style="margin-bottom:20px;">
-        <h4 style="font-size:13px; font-family:var(--font-mono); color:var(--cyan); margin-bottom:6px; text-transform:uppercase;">Architecture &amp; Details</h4>
-        <p id="modalAiRole" style="color:var(--text-muted); font-size:14px; line-height:1.6;"></p>
-      </div>
-
-      <div style="margin-bottom:20px;">
-        <h4 style="font-size:13px; font-family:var(--font-mono); color:var(--emerald); margin-bottom:6px; text-transform:uppercase;">Key Features</h4>
-        <ul id="modalFeatures" style="padding-left:20px; color:var(--text-muted); font-size:13.5px; line-height:1.6;"></ul>
-      </div>
-
-      <div style="margin-bottom:24px;">
-        <h4 style="font-size:13px; font-family:var(--font-mono); color:var(--purple); margin-bottom:6px; text-transform:uppercase;">Learning Outcome</h4>
-        <p id="modalImpact" style="color:var(--text-muted); font-size:14px;"></p>
-      </div>
-
-      <div style="display:flex; gap:12px; flex-wrap:wrap; padding-top:18px; border-top:1px solid var(--card-border);">
-        <a class="btn btn-primary" id="modalDemo" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
-        <a class="btn btn-secondary" id="modalCode" target="_blank" rel="noopener noreferrer">GitHub Code ↗</a>
-        <a class="btn btn-secondary" id="modalDl">Download Asset ↓</a>
+  <dialog class="project-modal" id="projectModal" aria-labelledby="modalTitle">
+    <div class="modal-shell">
+      <button class="modal-close icon-button" id="modalClose" type="button" aria-label="Close project details">×</button>
+      <div class="modal-content">
+        <div class="modal-media">
+          <img id="modalImage" src="assets/images/webza.svg" alt="Project preview" loading="lazy">
+        </div>
+        <div class="modal-info">
+          <p class="eyebrow" id="modalCategory"></p>
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+          <div class="modal-meta" id="modalTech"></div>
+          <div class="detail-block">
+            <h3>Key Features</h3>
+            <ul id="modalFeatures"></ul>
+          </div>
+          <div class="detail-block">
+            <h3>Architecture &amp; Details</h3>
+            <p id="modalAiRole"></p>
+          </div>
+          <div class="detail-block">
+            <h3>Learning Outcome</h3>
+            <p id="modalImpact"></p>
+          </div>
+          <div class="modal-actions">
+            <a class="btn btn-primary" id="modalDemo" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-secondary" id="modalGithub" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-secondary" id="modalDownload">Download <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
       </div>
     </div>
   </dialog>
 
-  <script src="js/app.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
