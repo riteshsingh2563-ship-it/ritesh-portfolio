@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard — Ritesh Singh Portfolio</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <!-- Admin Sidebar Navigation -->
+  <aside class="admin-sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-brand">
+        <span>Ritesh</span>
+        <span class="sidebar-badge">ADMIN</span>
+      </div>
+      <a href="/" target="_blank" title="View Public Site" style="color:var(--admin-muted); font-size:13px;">↗</a>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="nav-item active" data-tab="overview">
+        <span>📊</span> Overview
+      </a>
+      <a class="nav-item" data-tab="profile">
+        <span>👤</span> Profile &amp; Bio
+      </a>
+      <a class="nav-item" data-tab="skills">
+        <span>⚡</span> Skills &amp; Stack
+      </a>
+      <a class="nav-item" data-tab="projects">
+        <span>🚀</span> Projects &amp; Ventures
+      </a>
+      <a class="nav-item" data-tab="music">
+        <span>🎵</span> Music Showcase
+      </a>
+      <a class="nav-item" data-tab="resume">
+        <span>📄</span> Resume Manager
+      </a>
+      <a class="nav-item" data-tab="messages">
+        <span>📬</span> Contact Inbox
+        <span class="nav-badge" id="sidebarMsgBadge" hidden>0</span>
+      </a>
+      <a class="nav-item" data-tab="settings">
+        <span>⚙</span> Backup &amp; Settings
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span id="adminUsername">admin</span>
+      <button id="logoutBtn" style="color:var(--admin-rose); font-family:var(--font-mono); font-size:11px;">Logout →</button>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="admin-main">
+    <header class="admin-topbar">
+      <div class="topbar-left">
+        <h2 class="topbar-title" id="pageTitle">Overview</h2>
+      </div>
+      <div class="topbar-actions">
+        <a class="btn btn-secondary btn-sm" href="/" target="_blank">View Live Site ↗</a>
+      </div>
+    </header>
+
+    <div class="admin-body">
+      <!-- 1. OVERVIEW TAB -->
+      <section class="tab-content-panel active" id="tab-overview">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">Total Projects &amp; Ideas</span>
+            <span class="stat-value" id="statProjects">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Core Skills &amp; Tools</span>
+            <span class="stat-value" id="statSkills">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Music Tracks</span>
+            <span class="stat-value" id="statMusic">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Contact Submissions</span>
+            <span class="stat-value" id="statMessages">0</span>
+          </div>
+        </div>
+
+        <div class="admin-section-box">
+          <h3>Quick Control</h3>
+          <p class="subtitle">Direct shortcuts to frequent management tasks</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <button class="btn btn-primary" onclick="switchTab('projects'); document.getElementById('newProjTitle')?.focus();">
+              + New Project
+            </button>
+            <button class="btn btn-secondary" onclick="switchTab('resume');">
+              Replace Resume PDF
+            </button>
+            <button class="btn btn-secondary" onclick="switchTab('music');">
+              + Add Music Track
+            </button>
+            <button class="btn btn-secondary" onclick="switchTab('messages');">
+              Check Inbox
+            </button>
+          </div>
+        </div>
+
+        <div class="admin-section-box">
+          <h3>Recent Messages</h3>
+          <p class="subtitle">Latest inquiries received through the public portfolio contact form</p>
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>From</th>
+                  <th>Email</th>
+                  <th>Message Preview</th>
+                  <th>Received</th>
+                </tr>
+              </thead>
+              <tbody id="overviewRecentMsgs">
+                <tr><td colspan="4" style="text-align:center; color:var(--admin-muted);">No messages yet.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. PROFILE TAB -->
+      <section class="tab-content-panel" id="tab-profile">
+        <div class="admin-section-box">
+          <h3>Profile &amp; Public Identity</h3>
+          <p class="subtitle">Edits made here instantly update the public portfolio in real-time.</p>
+
+          <form id="profileForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="profName">Full Name</label>
+                <input id="profName" required>
+              </div>
+              <div class="form-group">
+                <label for="profRole">Role / Main Headline</label>
+                <input id="profRole" required>
+              </div>
+              <div class="form-group form-col-full">
+                <label for="profHeadline">Hero Banner Statement</label>
+                <input id="profHeadline">
+              </div>
+              <div class="form-group form-col-full">
+                <label for="profStatusBadge">Status Pill Text</label>
+                <input id="profStatusBadge" placeholder="OPEN TO INTERNSHIPS, PROJECTS &amp; COLLABORATIONS">
+              </div>
+              <div class="form-group">
+                <label for="profEmail">Public Contact Email</label>
+                <input id="profEmail" type="email" required>
+              </div>
+              <div class="form-group">
+                <label for="profPhone">Contact Phone Number</label>
+                <input id="profPhone" required>
+              </div>
+              <div class="form-group">
+                <label for="profLocation">Location</label>
+                <input id="profLocation" placeholder="India">
+              </div>
+              <div class="form-group">
+                <label for="profGithub">GitHub Profile URL</label>
+                <input id="profGithub">
+              </div>
+              <div class="form-group">
+                <label for="profYoutube">YouTube Channel URL</label>
+                <input id="profYoutube">
+              </div>
+              <div class="form-group">
+                <label for="profLinkedin">LinkedIn Profile URL</label>
+                <input id="profLinkedin">
+              </div>
+              <div class="form-group form-col-full">
+                <label for="profBio">Primary Bio</label>
+                <textarea id="profBio" rows="3"></textarea>
+              </div>
+              <div class="form-group form-col-full">
+                <label for="profSubBio">Extended Journey / Secondary Bio</label>
+                <textarea id="profSubBio" rows="3"></textarea>
+              </div>
+            </div>
+
+            <div style="margin-top:24px;">
+              <button class="btn btn-primary" type="submit">Save Profile Changes</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- 3. SKILLS TAB -->
+      <section class="tab-content-panel" id="tab-skills">
+        <div class="admin-section-box">
+          <h3>Skills &amp; Capabilities</h3>
+          <p class="subtitle">Add, edit, and categorize your technical proficiencies.</p>
+
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Category</th>
+                  <th>Proficiency</th>
+                  <th>Order</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="skillsTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="admin-section-box">
+          <h3 id="skillFormTitle">Add New Skill</h3>
+          <p class="subtitle">Define a new technical capability or tool</p>
+
+          <form id="skillForm">
+            <input type="hidden" id="skillId">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="skillTitle">Skill / Capability Title</label>
+                <input id="skillTitle" required placeholder="e.g. Next.js, AI Automation">
+              </div>
+              <div class="form-group">
+                <label for="skillCategory">Category</label>
+                <input id="skillCategory" required placeholder="e.g. Engineering, AI, Design, Growth">
+              </div>
+              <div class="form-group">
+                <label for="skillProficiency">Proficiency Level</label>
+                <select id="skillProficiency">
+                  <option value="Advanced">Advanced</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Exploring">Exploring</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="skillSortOrder">Sort Order (Number)</label>
+                <input id="skillSortOrder" type="number" value="10">
+              </div>
+              <div class="form-group form-col-full">
+                <label for="skillDesc">Description / Context</label>
+                <textarea id="skillDesc" rows="2" placeholder="Brief note on how you apply this skill"></textarea>
+              </div>
+            </div>
+
+            <div style="margin-top:20px; display:flex; gap:10px;">
+              <button class="btn btn-primary" type="submit" id="saveSkillBtn">Save Skill</button>
+              <button class="btn btn-secondary" type="button" id="cancelSkillBtn" hidden>Cancel</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- 4. PROJECTS TAB -->
+      <section class="tab-content-panel" id="tab-projects">
+        <div class="admin-section-box">
+          <h3>Projects &amp; Ventures Catalog</h3>
+          <p class="subtitle">Manage public projects, agency concepts, app prototypes, and media work.</p>
+
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Category</th>
+                  <th>Status</th>
+                  <th>Featured</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="projectsTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="admin-section-box">
+          <h3 id="projectFormTitle">Add New Project or Venture</h3>
+          <p class="subtitle">Complete project specifications and links</p>
+
+          <form id="projectForm">
+            <input type="hidden" id="projId">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="projTitle">Project Title</label>
+                <input id="projTitle" required placeholder="e.g. WEBZA, NEXVIX MEDIA">
+              </div>
+              <div class="form-group">
+                <label for="projVisualLabel">Visual Stamp Label</label>
+                <input id="projVisualLabel" placeholder="e.g. WEBZA / BRAND">
+              </div>
+              <div class="form-group">
+                <label for="projCategory">Category</label>
+                <input id="projCategory" required placeholder="e.g. Digital Brand, AI Agency, App Concept">
+              </div>
+              <div class="form-group">
+                <label for="projStatus">Status Label</label>
+                <input id="projStatus" required placeholder="e.g. Active Brand, Concept, Live">
+              </div>
+              <div class="form-group">
+                <label for="projStatusType">Status Visual Color Type</label>
+                <select id="projStatusType">
+                  <option value="concept">Concept (Purple)</option>
+                  <option value="active">Active (Emerald)</option>
+                  <option value="live">Live (Emerald)</option>
+                  <option value="prototype">Prototype (Amber)</option>
+                </select>
+              </div>
+              <div class="form-group" style="display:flex; flex-direction:row; align-items:center; gap:8px; margin-top:20px;">
+                <input id="projFeatured" type="checkbox" style="width:18px; height:18px;">
+                <label for="projFeatured" style="margin:0; cursor:pointer;">Mark as Featured Project</label>
+              </div>
+
+              <div class="form-group form-col-full">
+                <label for="projDesc">Short Overview Description</label>
+                <textarea id="projDesc" rows="2" required placeholder="1-2 sentences summarizing the project"></textarea>
+              </div>
+              <div class="form-group form-col-full">
+                <label for="projDetails">In-Depth Architecture &amp; Role</label>
+                <textarea id="projDetails" rows="3" placeholder="Technical implementation, problem solved, and architecture"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="projTech">Tech Stack (Comma Separated)</label>
+                <input id="projTech" placeholder="React, Node.js, Tailwind CSS, AI">
+              </div>
+              <div class="form-group">
+                <label for="projImage">Cover Image Path / Upload URL</label>
+                <input id="projImage" placeholder="assets/images/webza.svg">
+              </div>
+
+              <div class="form-group form-col-full">
+                <label>Upload New Project Image / Media File</label>
+                <input id="projMediaFile" type="file" accept="image/*,video/*">
+              </div>
+
+              <div class="form-group">
+                <label for="projDemo">Live Demo URL</label>
+                <input id="projDemo" placeholder="https://...">
+              </div>
+              <div class="form-group">
+                <label for="projGithub">GitHub Repository URL</label>
+                <input id="projGithub" placeholder="https://github.com/...">
+              </div>
+
+              <div class="form-group">
+                <label for="projDownload">Download URL / Asset Path</label>
+                <input id="projDownload" placeholder="assets/Aura_Final.apk or .zip">
+              </div>
+              <div class="form-group">
+                <label for="projDownloadLabel">Download Button Label</label>
+                <input id="projDownloadLabel" placeholder="Download APK / Source ZIP">
+              </div>
+
+              <div class="form-group form-col-full">
+                <label for="projFeatures">Key Features (One per line)</label>
+                <textarea id="projFeatures" rows="3" placeholder="Feature 1&#10;Feature 2&#10;Feature 3"></textarea>
+              </div>
+
+              <div class="form-group form-col-full">
+                <label for="projOutcome">Learning Outcome &amp; Impact</label>
+                <input id="projOutcome" placeholder="What this project proved or taught">
+              </div>
+            </div>
+
+            <div style="margin-top:24px; display:flex; gap:12px;">
+              <button class="btn btn-primary" type="submit" id="saveProjBtn">Save Project</button>
+              <button class="btn btn-secondary" type="button" id="cancelProjBtn" hidden>Cancel</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- 5. MUSIC TAB -->
+      <section class="tab-content-panel" id="tab-music">
+        <div class="admin-section-box">
+          <h3>Music &amp; Audio Tracks</h3>
+          <p class="subtitle">Manage showcase audio tracks, artwork, and public visibility.</p>
+
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Genre</th>
+                  <th>Duration</th>
+                  <th>Visibility</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="musicTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="admin-section-box">
+          <h3 id="musicFormTitle">Add Music Track</h3>
+          <p class="subtitle">Upload or link an audio file for the portfolio player</p>
+
+          <form id="musicForm">
+            <input type="hidden" id="trackId">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="trackTitle">Track Title</label>
+                <input id="trackTitle" required placeholder="e.g. Midnight Focus">
+              </div>
+              <div class="form-group">
+                <label for="trackArtist">Artist / Attribution</label>
+                <input id="trackArtist" placeholder="Ritesh Singh">
+              </div>
+              <div class="form-group">
+                <label for="trackGenre">Genre / Vibe</label>
+                <input id="trackGenre" required placeholder="e.g. Lo-Fi Coding Beats, Cyber Synth">
+              </div>
+              <div class="form-group">
+                <label for="trackDuration">Duration String</label>
+                <input id="trackDuration" placeholder="0:10">
+              </div>
+              <div class="form-group">
+                <label for="trackAudioUrl">Audio URL / Path</label>
+                <input id="trackAudioUrl" required placeholder="assets/audio/midnight-focus.wav">
+              </div>
+              <div class="form-group">
+                <label for="trackArtwork">Artwork URL / Path</label>
+                <input id="trackArtwork" placeholder="assets/images/track-chill.svg">
+              </div>
+
+              <div class="form-group form-col-full">
+                <label>Or Upload New Audio File (.wav, .mp3)</label>
+                <input id="trackAudioFile" type="file" accept="audio/*">
+              </div>
+
+              <div class="form-group form-col-full">
+                <label for="trackDesc">Track Description</label>
+                <textarea id="trackDesc" rows="2" placeholder="Mood and context behind this track"></textarea>
+              </div>
+
+              <div class="form-group form-col-full" style="display:flex; align-items:center; gap:8px;">
+                <input id="trackVisible" type="checkbox" checked style="width:18px; height:18px;">
+                <label for="trackVisible" style="margin:0; cursor:pointer;">Visible publicly to portfolio visitors</label>
+              </div>
+            </div>
+
+            <div style="margin-top:20px; display:flex; gap:10px;">
+              <button class="btn btn-primary" type="submit" id="saveTrackBtn">Save Track</button>
+              <button class="btn btn-secondary" type="button" id="cancelTrackBtn" hidden>Cancel</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- 6. RESUME TAB -->
+      <section class="tab-content-panel" id="tab-resume">
+        <div class="admin-section-box">
+          <h3>Resume Management</h3>
+          <p class="subtitle">Upload or replace your official curriculum vitae. Changes propagate to all download buttons immediately.</p>
+
+          <div style="background:var(--admin-sidebar); border:1px solid var(--admin-border); border-radius:6px; padding:24px; margin-bottom:28px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+              <div>
+                <strong style="font-size:16px;" id="currentResumeTitle">Ritesh Singh — Professional Resume</strong>
+                <p style="color:var(--admin-muted); font-size:12px; font-family:var(--font-mono); margin-top:4px;">
+                  File: <span id="currentResumeFilename">Ritesh-Singh-Resume.pdf</span> &bull; Updated: <span id="currentResumeUpdated">September 2026</span>
+                </p>
+              </div>
+              <div style="display:flex; gap:10px;">
+                <a class="btn btn-secondary btn-sm" id="testResumeBtn" href="assets/Ritesh-Singh-Resume.pdf" target="_blank">Test Download ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <form id="resumeUploadForm">
+            <div class="form-grid">
+              <div class="form-group form-col-full">
+                <label for="newResumeFile">Upload New PDF File to Replace Resume</label>
+                <input id="newResumeFile" type="file" accept="application/pdf" required>
+              </div>
+              <div class="form-group">
+                <label for="resumeDocTitle">Document Title</label>
+                <input id="resumeDocTitle" value="Ritesh Singh — Professional Resume">
+              </div>
+              <div class="form-group">
+                <label for="resumeUpdatedDate">Updated Date Label</label>
+                <input id="resumeUpdatedDate" value="September 2026">
+              </div>
+            </div>
+            <div style="margin-top:20px;">
+              <button class="btn btn-primary" type="submit" id="uploadResumeBtn">Upload &amp; Publish Resume</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- 7. MESSAGES INBOX TAB -->
+      <section class="tab-content-panel" id="tab-messages">
+        <div class="admin-section-box">
+          <h3>Visitor Contact Submissions</h3>
+          <p class="subtitle">Live inquiries saved directly into the SQLite database.</p>
+
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Sender</th>
+                  <th>Email</th>
+                  <th>Message</th>
+                  <th>Timestamp</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="messagesTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. SETTINGS & BACKUP TAB -->
+      <section class="tab-content-panel" id="tab-settings">
+        <div class="admin-section-box">
+          <h3>Database Backup &amp; Transfer</h3>
+          <p class="subtitle">Download a full JSON dump of your database or restore from a previous backup file.</p>
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <button class="btn btn-primary" id="exportBackupBtn">Export Database (JSON) ↓</button>
+            <label class="btn btn-secondary" style="cursor:pointer;">
+              Import Backup (JSON) ↑
+              <input id="importBackupInput" type="file" accept=".json" style="display:none;">
+            </label>
+          </div>
+        </div>
+
+        <div class="admin-section-box">
+          <h3>Change Admin Password</h3>
+          <p class="subtitle">Securely update your admin authentication credentials.</p>
+          <form id="changePasswordForm" style="max-width:440px;">
+            <div class="form-group" style="margin-bottom:14px;">
+              <label for="currentPassword">Current Password</label>
+              <input id="currentPassword" type="password" required>
+            </div>
+            <div class="form-group" style="margin-bottom:20px;">
+              <label for="newPassword">New Password (Min 6 chars)</label>
+              <input id="newPassword" type="password" required minlength="6">
+            </div>
+            <button class="btn btn-primary" type="submit">Update Password</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Floating Toast Notifications -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

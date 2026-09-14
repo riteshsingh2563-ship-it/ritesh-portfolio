@@ -1,0 +1,249 @@
+[
+  {
+    "id": "aura-app",
+    "name": "Aura App",
+    "visualLabel": "AURA / MOBILE",
+    "category": "Cross-Platform Mobile App",
+    "featured": true,
+    "statusLabel": "Release APK ready",
+    "description": "A high-performance mobile application engineered with React, Vite, Capacitor, and Firebase, packaged as an optimized Android APK.",
+    "whatItDoes": "Delivers fluid reactive mobile interfaces, secure user authentication with Firebase, real-time Firestore database synchronization, and native device capabilities.",
+    "tech": [
+      "React",
+      "Capacitor",
+      "Android",
+      "Firebase",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "tags": [
+      "android",
+      "react",
+      "mobile",
+      "web"
+    ],
+    "features": [
+      "Native Android build powered by Capacitor bridge",
+      "Firebase Authentication and declarative Firestore rules",
+      "Mobile-first responsive interface with tactile micro-interactions",
+      "Direct download of release-ready Android APK"
+    ],
+    "aiRole": "AI-assisted architecture modeling, security rule auditing, and build automation.",
+    "impact": "Directly deployed and packaged into standalone release Android APK.",
+    "demoUrl": "",
+    "githubUrl": "https://github.com/riteshsingh02010",
+    "downloadUrl": "assets/Aura_Final.apk",
+    "downloadLabel": "Download Android APK (8.4MB)",
+    "screenshots": [
+      {
+        "src": "assets/images/aura-app.svg",
+        "alt": "Aura Mobile App Overview"
+      }
+    ],
+    "readmeTitle": "Aura App Architecture",
+    "readmeSections": [
+      {
+        "heading": "Overview",
+        "text": "Aura is a full-featured cross-platform application utilizing web technologies bundled into native Android targets with hardware acceleration."
+      },
+      {
+        "heading": "Key Stack",
+        "items": [
+          "React 18 + Vite",
+          "Capacitor 5 Native Bridge",
+          "Firebase Firestore & Auth",
+          "Tailwind CSS"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rk-fitness",
+    "name": "RK Fitness",
+    "visualLabel": "RK / FITNESS",
+    "category": "Full-Stack Web App",
+    "featured": true,
+    "statusLabel": "Live & Packaged",
+    "description": "A complete fitness club and membership portal built with Next.js, featuring dynamic workout plans, trainer profiles, and modern dark-mode aesthetics.",
+    "whatItDoes": "Enables fitness enthusiasts to browse programs, schedule personal training, calculate fitness metrics, and explore membership packages.",
+    "tech": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "react",
+      "web"
+    ],
+    "features": [
+      "Next.js App Router with Server-Side Rendering and fast hydration",
+      "High-contrast dark-mode editorial visual design",
+      "Interactive workout calculators and schedule viewer",
+      "Complete bundled source distribution available for download"
+    ],
+    "aiRole": "Rapid component design iteration and semantic responsive layouts.",
+    "impact": "High Lighthouse performance rating and modular component architecture.",
+    "demoUrl": "",
+    "githubUrl": "https://github.com/riteshsingh02010",
+    "downloadUrl": "assets/RK-Fitness-Final-Website.zip",
+    "downloadLabel": "Download Source ZIP (6.8MB)",
+    "screenshots": [
+      {
+        "src": "assets/images/rk-fitness.svg",
+        "alt": "RK Fitness Platform"
+      }
+    ],
+    "readmeTitle": "RK Fitness System",
+    "readmeSections": [
+      {
+        "heading": "System Architecture",
+        "text": "Built on Next.js with optimized image pipelines, Tailwind utility styling, and modular TypeScript components."
+      },
+      {
+        "heading": "Highlights",
+        "items": [
+          "Zero layout shift design",
+          "Full dark mode support",
+          "Accessible responsive navigation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "webza-os",
+    "name": "Webza OS",
+    "visualLabel": "WEBZA / OS",
+    "category": "Interactive Web Environment",
+    "featured": true,
+    "statusLabel": "Active Experiment",
+    "description": "A browser-based desktop operating system simulation featuring draggable, resizable windows, taskbar system, and modular virtual applications.",
+    "whatItDoes": "Recreates a desktop computing environment directly in the browser using pure web standards and lightweight DOM rendering.",
+    "tech": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "DOM API"
+    ],
+    "tags": [
+      "javascript",
+      "web",
+      "tools"
+    ],
+    "features": [
+      "Multi-window manager with z-index stacking, dragging, and resizing",
+      "System dock / taskbar with running app indicators",
+      "Virtual desktop utilities and custom theme engine",
+      "Zero external runtime dependencies"
+    ],
+    "aiRole": "DOM math modeling for boundaries, resize snapping, and window state persistence.",
+    "impact": "Demonstrates deep mastery of vanilla JavaScript event loops and DOM manipulation.",
+    "demoUrl": "",
+    "githubUrl": "https://github.com/riteshsingh02010",
+    "downloadUrl": "",
+    "downloadLabel": "",
+    "screenshots": [
+      {
+        "src": "assets/images/webza-os.svg",
+        "alt": "Webza OS Desktop"
+      }
+    ],
+    "readmeTitle": "Webza OS Architecture",
+    "readmeSections": [
+      {
+        "heading": "Window Management",
+        "text": "Features a customized lightweight windowing engine built from scratch without external canvas or heavy desktop libraries."
+      }
+    ]
+  },
+  {
+    "id": "roshan-jewel",
+    "name": "Roshan Jewel",
+    "visualLabel": "ROSHAN / JEWELRY",
+    "category": "Luxury E-Commerce",
+    "featured": false,
+    "statusLabel": "Production Prototype",
+    "description": "An editorial e-commerce experience crafted for a luxury jewelry house, featuring smooth catalog filtering, high-resolution showcases, and cart persistence.",
+    "whatItDoes": "Showcases handcrafted gold and diamond collections with modern micro-interactions, responsive grids, and clean checkout flows.",
+    "tech": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Context API"
+    ],
+    "tags": [
+      "react",
+      "web"
+    ],
+    "features": [
+      "Sophisticated luxury color palette and serif-accented typography",
+      "Real-time category and metal/stone filtering",
+      "Persistent client-side shopping bag state",
+      "Optimized media delivery and responsive product cards"
+    ],
+    "aiRole": "Tailwind styling refinement and accessible form components.",
+    "impact": "Smooth 60fps animations and seamless mobile shopping experience.",
+    "demoUrl": "",
+    "githubUrl": "https://github.com/riteshsingh02010",
+    "downloadUrl": "",
+    "downloadLabel": "",
+    "screenshots": [
+      {
+        "src": "assets/images/roshan-jewel.svg",
+        "alt": "Roshan Jewel Storefront"
+      }
+    ],
+    "readmeTitle": "Roshan Jewel Specs",
+    "readmeSections": [
+      {
+        "heading": "E-Commerce Experience",
+        "text": "Crafted with attention to micro-interactions, smooth hover transitions, and clean typography hierarchy."
+      }
+    ]
+  },
+  {
+    "id": "freellm-api",
+    "name": "FreeLLM API",
+    "visualLabel": "FREE / LLM API",
+    "category": "Developer Tool & API",
+    "featured": false,
+    "statusLabel": "Utility",
+    "description": "A lightweight proxy service and developer interface designed to streamline free AI model endpoints for rapid local prototyping and experimentation.",
+    "whatItDoes": "Bridges client requests to available LLM inference providers with unified request/response schemas and rate-limit handling.",
+    "tech": [
+      "Python",
+      "Node.js",
+      "REST API",
+      "JSON"
+    ],
+    "tags": [
+      "python",
+      "tools"
+    ],
+    "features": [
+      "Unified OpenAI-compatible completion format",
+      "Automated error recovery and fallback provider switching",
+      "Lightweight local server footprint",
+      "Simple CLI testing interface"
+    ],
+    "aiRole": "Prompt engineering, token optimization, and payload streaming.",
+    "impact": "Accelerates local AI app development without expensive API subscriptions.",
+    "demoUrl": "",
+    "githubUrl": "https://github.com/riteshsingh02010",
+    "downloadUrl": "",
+    "downloadLabel": "",
+    "screenshots": [
+      {
+        "src": "assets/images/freellm-api.svg",
+        "alt": "FreeLLM API Gateway"
+      }
+    ],
+    "readmeTitle": "FreeLLM API Documentation",
+    "readmeSections": [
+      {
+        "heading": "Integration",
+        "text": "Can be consumed like any standard OpenAI endpoint for local coding assistants or web prototypes."
+      }
+    ]
+  }
+]

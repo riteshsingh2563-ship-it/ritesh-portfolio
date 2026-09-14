@@ -1,0 +1,329 @@
+{
+  "profile": {
+    "name": "Ritesh Singh",
+    "role": "Student, Creator & Digital Builder",
+    "headline": "Bridging Technology, AI, Web Development & Digital Business",
+    "email": "Riteshsingh02010@gmail.com",
+    "phone": "+91 7898195460",
+    "location": "India",
+    "bio": "Ritesh is a student passionately exploring technology, AI, modern web development, digital business, and content creation. He actively learns by building real-world projects, testing business concepts, editing media, and mastering software development tools.",
+    "subBio": "From architecting agency concepts like Nexvix Media and BoostMyBrand.ai to engineering web brands like Webza and experimenting with YouTube Shorts and payment workflows, Ritesh combines technical curiosity with entrepreneurial thinking.",
+    "github": "https://github.com/riteshsingh02010",
+    "youtube": "https://youtube.com/@riteshsingh",
+    "linkedin": "https://linkedin.com/in/riteshsingh",
+    "statusBadge": "OPEN TO INTERNSHIPS, PROJECTS & COLLABORATIONS"
+  },
+  "learningFocus": [
+    {
+      "title": "Web & App Development",
+      "description": "Building interactive, responsive websites, single-page applications, and cross-platform mobile experiences with modern web standards.",
+      "icon": "code"
+    },
+    {
+      "title": "AI Tools & AI-Powered Products",
+      "description": "Leveraging LLMs, Google Antigravity, Gemini, and ChatGPT to accelerate prototyping, workflow automation, and smart web features.",
+      "icon": "cpu"
+    },
+    {
+      "title": "Website Design & UI/UX",
+      "description": "Crafting clean, accessible, high-conversion user interfaces with thoughtful typography, responsive layouts, and micro-interactions.",
+      "icon": "layout"
+    },
+    {
+      "title": "Digital & Social Media Marketing",
+      "description": "Exploring viral growth mechanics, brand positioning, audience segmentation, and performance marketing strategies.",
+      "icon": "trending-up"
+    },
+    {
+      "title": "Business & Entrepreneurship",
+      "description": "Formulating scalable business models, agency workflows, client acquisition funnels, and monetization architectures.",
+      "icon": "briefcase"
+    },
+    {
+      "title": "Video Editing & Content Creation",
+      "description": "Producing engaging YouTube Shorts and anime edits with CapCut and Canva, optimizing titles, tags, and click-worthy thumbnails.",
+      "icon": "video"
+    }
+  ],
+  "tools": [
+    { "name": "GitHub", "category": "Code & Versioning", "desc": "Repository management, open-source projects, and CI/CD version control." },
+    { "name": "Google Antigravity", "category": "AI Development", "desc": "Agentic coding workflows, autonomous execution, and intelligent code pairing." },
+    { "name": "Gemini", "category": "AI Engine", "desc": "Multimodal reasoning, complex problem solving, and architecture design." },
+    { "name": "ChatGPT", "category": "AI Assistant", "desc": "Prompt engineering, copywriting, business modeling, and rapid debugging." },
+    { "name": "Canva", "category": "Visual Design", "desc": "Brand asset design, social media graphics, and custom YouTube thumbnails." },
+    { "name": "CapCut", "category": "Video Editing", "desc": "Fast-paced video cutting, audio beat sync, captions, and YouTube Shorts pacing." },
+    { "name": "Wix", "category": "Web Platform", "desc": "Rapid website deployment, CMS modeling, and client storefront setup." },
+    { "name": "Odoo", "category": "Business Management", "desc": "ERP workflows, CRM integration, invoicing, and business operational tools." },
+    { "name": "Razorpay Concepts", "category": "Payment Infrastructure", "desc": "FinTech workflows, checkout integration, webhook handling, and payment gateways." },
+    { "name": "Modern Web Tech", "category": "Frontend & APIs", "desc": "HTML5, CSS3, JavaScript (ES6+), React, Tailwind CSS, REST APIs, and Node.js." }
+  ],
+  "projects": [
+    {
+      "id": "webza",
+      "title": "WEBZA",
+      "visualLabel": "WEBZA / BRAND",
+      "category": "Digital Web Brand",
+      "status": "Active Brand",
+      "statusType": "active",
+      "featured": true,
+      "description": "A web-focused personal and project brand where Ritesh creates modern websites, bespoke web applications, and digital experiences for businesses and individuals.",
+      "details": "WEBZA serves as the umbrella brand for high-performance web development services. It emphasizes clean code, responsive mobile design, fast loading speeds, and user-friendly interfaces tailored to modern client needs.",
+      "tech": ["HTML5", "CSS3", "JavaScript", "React", "Tailwind CSS", "UI/UX"],
+      "image": "assets/images/webza.svg",
+      "videoUrl": "",
+      "githubUrl": "https://github.com/riteshsingh02010",
+      "demoUrl": "",
+      "downloadUrl": "",
+      "downloadLabel": "",
+      "features": [
+        "Modern responsive website design for businesses",
+        "High-performance frontend architecture with fast load times",
+        "SEO-friendly semantic markup and accessibility compliance",
+        "Custom branding and digital asset integration"
+      ],
+      "learningOutcome": "Hands-on experience in client-facing web architecture, design token management, and project scoping."
+    },
+    {
+      "id": "nexvix-media",
+      "title": "NEXVIX MEDIA",
+      "visualLabel": "NEXVIX / AGENCY",
+      "category": "Digital & AI Agency Concept",
+      "status": "Agency Concept",
+      "statusType": "concept",
+      "featured": true,
+      "description": "A digital and AI marketing agency concept designed to help businesses scale through targeted digital marketing, influencer marketing, social media, and AI-driven growth workflows.",
+      "details": "Conceived to bridge modern AI tools with business marketing needs. Nexvix Media focuses on automating creative asset production, managing multi-platform social distribution, and structuring influencer marketing campaigns with measurable ROI.",
+      "tech": ["AI Marketing", "Social Media Strategy", "Canva", "CapCut", "Campaign Management"],
+      "image": "assets/images/nexvix.svg",
+      "videoUrl": "",
+      "githubUrl": "",
+      "demoUrl": "",
+      "downloadUrl": "",
+      "downloadLabel": "",
+      "features": [
+        "AI-assisted copywriting and social media content pipelines",
+        "Influencer campaign structuring and creator outreach protocols",
+        "Multi-channel digital marketing blueprints for local and online businesses",
+        "Brand voice synthesis and audience retention frameworks"
+      ],
+      "learningOutcome": "Deep understanding of digital marketing funnels, client service models, and integrating AI to 10x agency productivity."
+    },
+    {
+      "id": "boostmybrand-ai",
+      "title": "BOOSTMYBRAND.AI",
+      "visualLabel": "BOOST / AI STARTUP",
+      "category": "AI Startup Concept",
+      "status": "Startup Concept",
+      "statusType": "concept",
+      "featured": true,
+      "description": "An AI-powered digital marketing business concept designed around helping brands optimize their online presence, enhance discoverability, and automate brand content generation.",
+      "details": "BoostMyBrand.ai explores how generative AI models can be packaged into simple, actionable tools for entrepreneurs. The platform concept includes automated SEO meta-tag generation, social caption crafting, competitor tone analysis, and digital brand scorecards.",
+      "tech": ["Generative AI", "Gemini API", "Prompt Engineering", "Web Architecture", "SaaS Concept"],
+      "image": "assets/images/boostmybrand.svg",
+      "videoUrl": "",
+      "githubUrl": "",
+      "demoUrl": "",
+      "downloadUrl": "",
+      "downloadLabel": "",
+      "features": [
+        "AI-driven content generation tailored to unique brand voices",
+        "Digital presence health check and SEO optimization recommendations",
+        "Automated social post planning and hashtag generation",
+        "Simplified user dashboard designed for non-technical business owners"
+      ],
+      "learningOutcome": "Exploration of software-as-a-service (SaaS) business models, AI prompt pipelines, and product-market fit evaluation."
+    },
+    {
+      "id": "influencer-system",
+      "title": "INFLUENCER MARKETING SYSTEM",
+      "visualLabel": "INFLUENCER / SYSTEM",
+      "category": "Business & Platform Concept",
+      "status": "Business Concept",
+      "statusType": "concept",
+      "featured": false,
+      "description": "A business concept and matchmaking system involving discovering suitable creators and influencers, connecting them with brands, and managing end-to-end campaigns.",
+      "details": "Solves the friction between small-to-medium businesses and creators. The system framework outlines creator vetting, niche classification (micro vs macro), automated pitch templates, deliverable tracking, and ROI verification.",
+      "tech": ["Influencer CRM", "Analytics Modeling", "Workflow Automation", "Social APIs"],
+      "image": "assets/images/influencer.svg",
+      "videoUrl": "",
+      "githubUrl": "",
+      "demoUrl": "",
+      "downloadUrl": "",
+      "downloadLabel": "",
+      "features": [
+        "Categorized creator discovery across YouTube, Instagram, and niche blogs",
+        "Standardized campaign briefing and timeline management",
+        "Performance tracking metrics (reach, engagement, conversion tracking)",
+        "Escrow and payment release milestone structure"
+      ],
+      "learningOutcome": "Insight into creator economy dynamics, brand sponsorship agreements, and workflow automation."
+    },
+    {
+      "id": "service-marketplace",
+      "title": "ON-DEMAND SERVICE MARKETPLACE",
+      "visualLabel": "SERVICE / APP",
+      "category": "Marketplace Application Concept",
+      "status": "App Concept",
+      "statusType": "concept",
+      "featured": true,
+      "description": "A marketplace-style mobile application concept inspired by on-demand local services such as AC repair, doorstep car wash, maid/home assistance, and urgent medicine delivery.",
+      "details": "Designed with a dual-sided marketplace architecture: a consumer portal for ordering and live tracking, and a service-provider portal for accepting bookings. Addresses common urban pain points with location-aware dispatching and transparent pricing.",
+      "tech": ["Mobile App Architecture", "Capacitor", "React", "Geolocation", "Marketplace Mechanics"],
+      "image": "assets/images/marketplace.svg",
+      "videoUrl": "",
+      "githubUrl": "",
+      "demoUrl": "",
+      "downloadUrl": "",
+      "downloadLabel": "",
+      "features": [
+        "Multi-service catalog: AC maintenance, vehicle detailing, housekeeping, urgent pharmacy",
+        "Live provider availability and geo-radius booking allocation",
+        "Transparent pricing estimates and digital checkout options",
+        "Ratings, reviews, and provider verification workflows"
+      ],
+      "learningOutcome": "Understanding complex marketplace logistics, supply-demand balancing, and mobile user experience design."
+    },
+    {
+      "id": "payment-gateway",
+      "title": "PAYMENT GATEWAY SYSTEM",
+      "visualLabel": "PAYMENT / FINTECH",
+      "category": "FinTech Learning & Concept",
+      "status": "Architecture Study",
+      "statusType": "concept",
+      "featured": false,
+      "description": "A project and learning concept around building a payment-gateway-style system, understanding payment infrastructure, security, and Razorpay integrations.",
+      "details": "An in-depth study of modern FinTech infrastructure. Covers checkout tokenization, merchant API authentication, cryptographic signature verification (HMAC SHA-256), webhook handling, and handling edge cases like refund lifecycles and network drops.",
+      "tech": ["Razorpay APIs", "Webhooks", "Node.js", "Cryptographic Signatures", "FinTech"],
+      "image": "assets/images/payment.svg",
+      "videoUrl": "",
+      "githubUrl": "",
+      "demoUrl": "",
+      "downloadUrl": "",
+      "downloadLabel": "",
+      "features": [
+        "Simulated checkout modal with order generation and status tracking",
+        "Server-side webhook listener with idempotent processing",
+        "Security validation and signature verification routines",
+        "Comprehensive learning documentation on payment states and retries"
+      ],
+      "learningOutcome": "Mastery of critical payment security concepts, API reliability, and webhook lifecycle management."
+    },
+    {
+      "id": "trading-course",
+      "title": "TRADING COURSE LANDING PAGE",
+      "visualLabel": "TRADING / LANDING",
+      "category": "Web Design & Conversion",
+      "status": "Design Prototype",
+      "statusType": "prototype",
+      "featured": false,
+      "description": "A modern, high-conversion landing page concept focused on presenting an online trading curriculum with clear value propositions, mentor authority, and enrollment triggers.",
+      "details": "Built to explore conversion rate optimization (CRO) principles. Features structured syllabus modules, sticky checkout calls-to-action, social proof student testimonial blocks, and interactive FAQ accordions.",
+      "tech": ["HTML5", "CSS Grid", "JavaScript", "Conversion Optimization", "Canva"],
+      "image": "assets/images/trading.svg",
+      "videoUrl": "",
+      "githubUrl": "",
+      "demoUrl": "",
+      "downloadUrl": "",
+      "downloadLabel": "",
+      "features": [
+        "High-contrast financial editorial styling and visual hierarchy",
+        "Interactive curriculum accordions with lesson previews",
+        "Trust signals, risk disclaimers, and transparent pricing tiers",
+        "Optimized mobile layout for fast social media traffic conversions"
+      ],
+      "learningOutcome": "Principles of consumer psychology, sales page architecture, and high-impact visual storytelling."
+    },
+    {
+      "id": "youtube-content",
+      "title": "YOUTUBE & CONTENT LAB",
+      "visualLabel": "CONTENT / MEDIA",
+      "category": "Video & Content Creation",
+      "status": "Active Creative",
+      "statusType": "active",
+      "featured": true,
+      "description": "Hands-on creative experimentation producing YouTube Shorts, anime edits, pacing optimization with CapCut, eye-catching Canva thumbnails, and audience retention strategies.",
+      "details": "Ritesh treats content creation as an engineering discipline: analyzing viewer drop-off points, designing compelling hooks in the first 2 seconds, testing title variations, optimizing tags, and syncing audio beats with visual transitions.",
+      "tech": ["CapCut", "Canva", "YouTube Shorts", "Video Editing", "Audience Retention", "SEO"],
+      "image": "assets/images/content.svg",
+      "videoUrl": "",
+      "githubUrl": "",
+      "demoUrl": "https://youtube.com/@riteshsingh",
+      "downloadUrl": "",
+      "downloadLabel": "",
+      "features": [
+        "Fast-paced vertical editing optimized for mobile viewers",
+        "Custom high-CTR thumbnail compositions crafted in Canva",
+        "Strategic title, tag, and description SEO for algorithm discovery",
+        "Rhythmic sound design and visual punch-ins to maintain viewer engagement"
+      ],
+      "learningOutcome": "Direct insights into algorithmic distribution, digital storytelling, and creative consistency."
+    },
+    {
+      "id": "personal-portfolio",
+      "title": "PERSONAL PORTFOLIO 2026",
+      "visualLabel": "PORTFOLIO / DEV",
+      "category": "Personal Brand & Web Application",
+      "status": "Live & Deployed",
+      "statusType": "live",
+      "featured": true,
+      "description": "This website itself — built to demonstrate Ritesh's multidisciplinary abilities across modern web development, UI/UX design, digital branding, and product thinking.",
+      "details": "Includes native SVG fluid ink-warp distortion, dark/light theme persistence, scroll progress telemetry, an interactive music player, a full-detail project inspection modal, a live resume downloader, and a complete admin management portal.",
+      "tech": ["HTML5", "CSS3", "Vanilla JavaScript", "SVG Filters", "LocalStorage", "Admin System"],
+      "image": "assets/images/webza-os.svg",
+      "videoUrl": "",
+      "githubUrl": "https://github.com/riteshsingh02010",
+      "demoUrl": "#top",
+      "downloadUrl": "assets/Ritesh-Singh-Resume.pdf",
+      "downloadLabel": "Download Resume PDF",
+      "features": [
+        "Zero-build-step ultra-fast performance with 100% native web standards",
+        "Interactive SVG ink-warp filter responding to pointer movements",
+        "Integrated client-side Admin Portal with passcode authentication",
+        "Built-in music player and dynamic resume management"
+      ],
+      "learningOutcome": "Full lifecycle execution of a high-polish creative portfolio with embedded CMS capabilities."
+    }
+  ],
+  "music": [
+    {
+      "id": "track-1",
+      "title": "Midnight Focus",
+      "artist": "Ritesh Singh (Lo-Fi Ambience)",
+      "genre": "Lo-Fi Coding Beats",
+      "description": "Gentle, repetitive harmonic chimes designed for late-night programming sessions and deep work.",
+      "duration": "0:10",
+      "artwork": "assets/images/track-chill.svg",
+      "audioUrl": "assets/audio/midnight-focus.wav",
+      "visible": true
+    },
+    {
+      "id": "track-2",
+      "title": "Synthesis 2026",
+      "artist": "Ritesh Singh (Future Sound)",
+      "genre": "Cyber Electronic",
+      "description": "Futuristic electronic sequence reflecting high-tech exploration, automation, and digital momentum.",
+      "duration": "0:08",
+      "artwork": "assets/images/track-cyber.svg",
+      "audioUrl": "assets/audio/synthesis-2026.wav",
+      "visible": true
+    },
+    {
+      "id": "track-3",
+      "title": "Deep Residue",
+      "artist": "Ritesh Singh (Atmospheric Drone)",
+      "genre": "Soundscape",
+      "description": "Calm, expansive low-frequency resonance ideal for focus, reading, and conceptual thinking.",
+      "duration": "0:12",
+      "artwork": "assets/images/track-ambient.svg",
+      "audioUrl": "assets/audio/deep-residue.wav",
+      "visible": true
+    }
+  ],
+  "resume": {
+    "title": "Ritesh Singh - Professional Resume",
+    "filename": "Ritesh-Singh-Resume.pdf",
+    "url": "assets/Ritesh-Singh-Resume.pdf",
+    "lastUpdated": "September 2026",
+    "visible": true
+  }
+}

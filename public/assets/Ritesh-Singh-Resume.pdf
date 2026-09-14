@@ -1,0 +1,151 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Length 3522 >>
+stream
+0.2 0.35 0.95 RG 2 w 50 718 m 562 718 l S
+0.85 0.88 0.92 RG 1 w 50 670 m 562 670 l S
+0.85 0.88 0.92 RG 1 w 50 595 m 562 595 l S
+0.85 0.88 0.92 RG 1 w 50 503 m 562 503 l S
+0.85 0.88 0.92 RG 1 w 50 290 m 562 290 l S
+BT
+/F1 22 Tf
+1 0 0 1 50 740 Tm
+(RITESH SINGH) Tj
+/F2 11 Tf
+1 0 0 1 50 722 Tm
+(Student & Creative Software Developer | India) Tj
+/F2 10 Tf
+1 0 0 1 50 706 Tm
+(Email: Riteshsingh02010@gmail.com | Phone: +91 7898195460) Tj
+/F1 13 Tf
+1 0 0 1 50 675 Tm
+(SUMMARY & OBJECTIVE) Tj
+/F2 10 Tf
+1 0 0 1 50 655 Tm
+(Enthusiastic and driven student software developer with hands-on experience building full-stack web and) Tj
+/F2 10 Tf
+1 0 0 1 50 642 Tm
+(mobile applications. Self-taught builder passionate about UI/UX, responsive performance, cross-platform apps,) Tj
+/F2 10 Tf
+1 0 0 1 50 629 Tm
+(and leveraging modern tools and AI to turn innovative ideas into practical, user-centered digital products.) Tj
+/F1 13 Tf
+1 0 0 1 50 600 Tm
+(TECHNICAL SKILLS) Tj
+/F1 10 Tf
+1 0 0 1 50 582 Tm
+(Frontend:) Tj
+/F2 10 Tf
+1 0 0 1 110 582 Tm
+(HTML5, CSS3, JavaScript \(ES6+\), TypeScript, React, Next.js, Tailwind CSS) Tj
+/F1 10 Tf
+1 0 0 1 50 567 Tm
+(Mobile & App:) Tj
+/F2 10 Tf
+1 0 0 1 130 567 Tm
+(Capacitor, Android SDK / APK builds, Progressive Web Apps \(PWA\)) Tj
+/F1 10 Tf
+1 0 0 1 50 552 Tm
+(Backend & Cloud:) Tj
+/F2 10 Tf
+1 0 0 1 150 552 Tm
+(Node.js, Express, Firebase \(Auth, Firestore, Security Rules\), RESTful APIs) Tj
+/F1 10 Tf
+1 0 0 1 50 537 Tm
+(Tools & Workflow:) Tj
+/F2 10 Tf
+1 0 0 1 155 537 Tm
+(Git, GitHub, VS Code, Linux / Bash, Termux, Vercel, Netlify) Tj
+/F1 13 Tf
+1 0 0 1 50 508 Tm
+(FEATURED PROJECTS) Tj
+/F1 11 Tf
+1 0 0 1 50 488 Tm
+(Aura App - Cross-Platform Mobile Application) Tj
+/F2 9.5 Tf
+1 0 0 1 330 488 Tm
+(React, Vite, Capacitor, Tailwind, Firebase) Tj
+/F2 9.5 Tf
+1 0 0 1 65 474 Tm
+(- Engineered a fluid, modern mobile app with reactive UI, authentication, and secure Firestore rules.) Tj
+/F2 9.5 Tf
+1 0 0 1 65 461 Tm
+(- Packaged and deployed release-ready Android APK with native device bridge integration.) Tj
+/F1 11 Tf
+1 0 0 1 50 438 Tm
+(RK Fitness - Full-Stack Fitness & Gym Platform) Tj
+/F2 9.5 Tf
+1 0 0 1 330 438 Tm
+(Next.js, React, Tailwind CSS, TypeScript) Tj
+/F2 9.5 Tf
+1 0 0 1 65 424 Tm
+(- Built a comprehensive fitness web application with workout programs, interactive booking, and member portals.) Tj
+/F2 9.5 Tf
+1 0 0 1 65 411 Tm
+(- Designed dark-mode first responsive UI with high Lighthouse performance scores.) Tj
+/F1 11 Tf
+1 0 0 1 50 388 Tm
+(Webza OS - Web-Based Desktop Operating System) Tj
+/F2 9.5 Tf
+1 0 0 1 330 388 Tm
+(HTML5, CSS3, Vanilla JavaScript, Canvas) Tj
+/F2 9.5 Tf
+1 0 0 1 65 374 Tm
+(- Implemented a simulated window manager with draggable, resizable windows, taskbar, and virtual apps.) Tj
+/F2 9.5 Tf
+1 0 0 1 65 361 Tm
+(- Zero external dependencies; built using native DOM manipulation and modular architecture.) Tj
+/F1 11 Tf
+1 0 0 1 50 338 Tm
+(Roshan Jewel - Luxury E-Commerce Web Store) Tj
+/F2 9.5 Tf
+1 0 0 1 330 338 Tm
+(Next.js, Tailwind CSS, React, Context API) Tj
+/F2 9.5 Tf
+1 0 0 1 65 324 Tm
+(- Crafted an editorial luxury e-commerce experience with interactive catalog, filtering, and responsive carts.) Tj
+/F1 13 Tf
+1 0 0 1 50 295 Tm
+(EDUCATION & LEARNING) Tj
+/F1 10 Tf
+1 0 0 1 50 275 Tm
+(Student | Science & Technology Stream) Tj
+/F2 10 Tf
+1 0 0 1 50 260 Tm
+(Focused on Computer Science, Mathematics, and Practical Software Engineering.) Tj
+/F2 10 Tf
+1 0 0 1 50 246 Tm
+(Active learner exploring AI integration, distributed systems, and modern UI engineering.) Tj
+ET
+
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000326 00000 n 
+0000000396 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3970
+%%EOF

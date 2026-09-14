@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard — Ritesh Singh Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .admin-standalone-container {
+      width: min(1000px, calc(100% - 40px));
+      margin: 40px auto 80px;
+      padding: 36px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Ritesh<span>®</span></a>
+    <div style="display:flex; align-items:center; gap:16px;">
+      <a class="btn btn-secondary" href="index.html" style="font-size:12px;">← View Live Site</a>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Switch theme">
+        <span>☼</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="admin-standalone-container">
+    <div id="adminPasscodeSection">
+      <div class="admin-header">
+        <p class="modal-eyebrow">Secure Access</p>
+        <h2>Portfolio Control Center</h2>
+        <p style="color:var(--muted); font-size:14px; margin-top:8px;">
+          Manage projects, music tracks, resume PDF, and profile information. Enter passcode to proceed.
+        </p>
+      </div>
+
+      <form id="adminPasscodeForm" style="max-width:380px; margin-top:24px;">
+        <div class="form-field">
+          <label for="adminPasscode">Admin Passcode (Default: ritesh2026)</label>
+          <input id="adminPasscode" type="password" required placeholder="Enter passcode">
+          <small class="field-error" id="adminPasscodeError"></small>
+        </div>
+        <button class="btn btn-primary" type="submit" style="margin-top:14px;">
+          Unlock Dashboard →
+        </button>
+      </form>
+    </div>
+
+    <div id="adminDashboardSection" hidden>
+      <div class="admin-header">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+          <div>
+            <p class="modal-eyebrow">Content Management System</p>
+            <h2>Portfolio Admin Dashboard</h2>
+          </div>
+          <span style="font-family:var(--font-mono); font-size:11px; color:var(--accent); background:var(--accent-glow); padding:4px 10px; border-radius:4px;">
+            AUTHENTICATED
+          </span>
+        </div>
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="admin-tabs" role="tablist">
+        <button class="admin-tab-btn active" type="button" data-target-pane="paneProjects">Projects</button>
+        <button class="admin-tab-btn" type="button" data-target-pane="paneMusic">Music</button>
+        <button class="admin-tab-btn" type="button" data-target-pane="paneResume">Resume</button>
+        <button class="admin-tab-btn" type="button" data-target-pane="paneProfile">Profile &amp; Bio</button>
+        <button class="admin-tab-btn" type="button" data-target-pane="paneBackup">Backup &amp; Sync</button>
+      </div>
+
+      <!-- Pane: Projects -->
+      <div class="admin-tab-pane active" id="paneProjects">
+        <h3 style="font-size:18px; margin-bottom:12px;">Active Projects &amp; Concepts</h3>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="adminProjectsTbody"></tbody>
+        </table>
+
+        <div style="margin-top:32px; padding:24px; background:var(--panel-card); border-radius:8px;">
+          <h4 style="font-size:16px; margin-bottom:16px;">Add New Project or Idea</h4>
+          <form id="adminAddProjectForm" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+            <div class="form-field">
+              <label for="newProjTitle">Title</label>
+              <input id="newProjTitle" required placeholder="Project Name">
+            </div>
+            <div class="form-field">
+              <label for="newProjCategory">Category</label>
+              <input id="newProjCategory" required placeholder="e.g. Web Brand, AI Agency">
+            </div>
+            <div class="form-field">
+              <label for="newProjStatus">Status Label</label>
+              <input id="newProjStatus" required placeholder="e.g. Active Brand, Concept, Live">
+            </div>
+            <div class="form-field">
+              <label for="newProjStatusType">Status Type</label>
+              <select id="newProjStatusType">
+                <option value="concept">Concept</option>
+                <option value="active">Active</option>
+                <option value="live">Live</option>
+                <option value="prototype">Prototype</option>
+              </select>
+            </div>
+            <div class="form-field" style="grid-column:1/-1;">
+              <label for="newProjDesc">Short Description</label>
+              <textarea id="newProjDesc" rows="2" required placeholder="Summary description"></textarea>
+            </div>
+            <div class="form-field" style="grid-column:1/-1;">
+              <label for="newProjDetails">In-Depth Details</label>
+              <textarea id="newProjDetails" rows="3" placeholder="Explain the problem, concept, or technical architecture"></textarea>
+            </div>
+            <div class="form-field">
+              <label for="newProjTech">Tech/Tools (Comma separated)</label>
+              <input id="newProjTech" placeholder="React, Node.js, AI, Canva">
+            </div>
+            <div class="form-field">
+              <label for="newProjImage">Image or SVG Path</label>
+              <input id="newProjImage" placeholder="assets/images/webza.svg">
+            </div>
+            <div class="form-field">
+              <label for="newProjDemo">Live Demo URL (Optional)</label>
+              <input id="newProjDemo" placeholder="https://...">
+            </div>
+            <div class="form-field">
+              <label for="newProjGithub">GitHub URL (Optional)</label>
+              <input id="newProjGithub" placeholder="https://github.com/...">
+            </div>
+            <div class="form-field">
+              <label for="newProjDownload">Download URL (Optional)</label>
+              <input id="newProjDownload" placeholder="assets/myfile.zip or .apk">
+            </div>
+            <div class="form-field">
+              <label for="newProjDownloadLabel">Download Button Label</label>
+              <input id="newProjDownloadLabel" placeholder="Download APK / Source">
+            </div>
+            <div class="form-field" style="grid-column:1/-1;">
+              <label for="newProjFeatures">Key Features (One per line)</label>
+              <textarea id="newProjFeatures" rows="3" placeholder="Feature 1&#10;Feature 2&#10;Feature 3"></textarea>
+            </div>
+            <input type="hidden" id="newProjId">
+            <button class="btn btn-primary" type="submit" style="grid-column:1/-1;">Save Project →</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Pane: Music -->
+      <div class="admin-tab-pane" id="paneMusic">
+        <h3 style="font-size:18px; margin-bottom:12px;">Showcase Music Tracks</h3>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Genre</th>
+              <th>Visibility</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="adminMusicTbody"></tbody>
+        </table>
+
+        <div style="margin-top:32px; padding:24px; background:var(--panel-card); border-radius:8px;">
+          <h4 style="font-size:16px; margin-bottom:16px;">Add Music Track</h4>
+          <form id="adminAddMusicForm" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+            <div class="form-field">
+              <label for="newTrackTitle">Track Title</label>
+              <input id="newTrackTitle" required placeholder="Track Name">
+            </div>
+            <div class="form-field">
+              <label for="newTrackArtist">Artist / Attribution</label>
+              <input id="newTrackArtist" placeholder="Ritesh Singh">
+            </div>
+            <div class="form-field">
+              <label for="newTrackGenre">Genre / Vibe</label>
+              <input id="newTrackGenre" required placeholder="Lo-Fi Coding Beats">
+            </div>
+            <div class="form-field">
+              <label for="newTrackDuration">Duration</label>
+              <input id="newTrackDuration" placeholder="0:10">
+            </div>
+            <div class="form-field">
+              <label for="newTrackAudio">Audio Source URL</label>
+              <input id="newTrackAudio" required placeholder="assets/audio/midnight-focus.wav">
+            </div>
+            <div class="form-field">
+              <label for="newTrackArtwork">Artwork URL</label>
+              <input id="newTrackArtwork" placeholder="assets/images/track-chill.svg">
+            </div>
+            <div class="form-field" style="grid-column:1/-1; display:flex; align-items:center; gap:8px;">
+              <input id="newTrackVisible" type="checkbox" checked style="width:18px; height:18px;">
+              <label for="newTrackVisible" style="margin:0; cursor:pointer;">Visible publicly on portfolio</label>
+            </div>
+            <button class="btn btn-primary" type="submit" style="grid-column:1/-1;">Add Track →</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Pane: Resume -->
+      <div class="admin-tab-pane" id="paneResume">
+        <h3 style="font-size:18px; margin-bottom:12px;">Resume File Management</h3>
+        <div style="padding:24px; background:var(--panel-card); border-radius:8px;">
+          <p style="color:var(--muted); font-size:14px; margin-bottom:16px;">
+            Upload a new PDF file to replace the public resume. The file will be stored directly in client storage so visitors immediately download the updated version.
+          </p>
+          <div class="form-field" style="margin-bottom:20px;">
+            <label for="adminResumeFile">Upload New PDF Resume</label>
+            <input id="adminResumeFile" type="file" accept="application/pdf">
+          </div>
+          <div style="display:flex; gap:12px;">
+            <a class="btn btn-secondary resume-download-btn" href="assets/Ritesh-Singh-Resume.pdf" target="_blank">Test Current PDF ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pane: Profile -->
+      <div class="admin-tab-pane" id="paneProfile">
+        <h3 style="font-size:18px; margin-bottom:12px;">Edit Profile Information</h3>
+        <form id="adminProfileForm" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <div class="form-field">
+            <label for="editProfName">Full Name</label>
+            <input id="editProfName" required>
+          </div>
+          <div class="form-field">
+            <label for="editProfRole">Role / Headline</label>
+            <input id="editProfRole" required>
+          </div>
+          <div class="form-field">
+            <label for="editProfEmail">Email</label>
+            <input id="editProfEmail" type="email" required>
+          </div>
+          <div class="form-field">
+            <label for="editProfPhone">Phone</label>
+            <input id="editProfPhone" required>
+          </div>
+          <div class="form-field" style="grid-column:1/-1;">
+            <label for="editProfGithub">GitHub Profile URL</label>
+            <input id="editProfGithub">
+          </div>
+          <div class="form-field" style="grid-column:1/-1;">
+            <label for="editProfBio">Bio / Summary</label>
+            <textarea id="editProfBio" rows="4"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit" style="grid-column:1/-1;">Update Profile Details →</button>
+        </form>
+      </div>
+
+      <!-- Pane: Backup & Sync -->
+      <div class="admin-tab-pane" id="paneBackup">
+        <h3 style="font-size:18px; margin-bottom:12px;">Data Backup &amp; Transfer</h3>
+        <p style="color:var(--muted); font-size:14px; margin-bottom:20px;">
+          Download your portfolio database as a JSON file, or restore from a previously exported backup.
+        </p>
+        <div style="display:flex; gap:16px; flex-wrap:wrap;">
+          <button class="btn btn-primary" id="exportDataBtn" type="button">Export site-data.json ↓</button>
+          <label class="btn btn-secondary" style="cursor:pointer;">
+            Import site-data.json ↑
+            <input id="importDataInput" type="file" accept=".json" style="display:none;">
+          </label>
+          <button class="btn btn-danger" id="resetDataBtn" type="button">Reset Factory Defaults ↺</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
