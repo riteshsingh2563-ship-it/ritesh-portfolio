@@ -724,12 +724,16 @@ app.use((req, res) => {
 });
 
 // Server Initialization
-app.listen(PORT, () => {
-  console.log(`\n=================================================`);
-  console.log(`⚡ Ritesh Singh Portfolio & Admin System`);
-  console.log(`🌐 Public Portfolio:  http://localhost:${PORT}`);
-  console.log(`🔒 Secure Admin:      http://localhost:${PORT}/admin`);
-  console.log(`🔑 Default Admin:     admin / ritesh2026`);
-  console.log(`💾 Database:          SQLite (database/portfolio.db)`);
-  console.log(`=================================================\n`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`\n=================================================`);
+    console.log(`⚡ Ritesh Singh Portfolio & Admin System`);
+    console.log(`🌐 Public Portfolio:  http://localhost:${PORT}`);
+    console.log(`🔒 Secure Admin:      http://localhost:${PORT}/admin`);
+    console.log(`🔑 Default Admin:     admin / ritesh2026`);
+    console.log(`💾 Database:          SQLite (database/portfolio.db)`);
+    console.log(`=================================================\n`);
+  });
+}
+
+module.exports = app;
