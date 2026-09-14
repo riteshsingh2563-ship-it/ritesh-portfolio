@@ -3,981 +3,416 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ritesh Singh — Student, Creator & Digital Builder exploring Web Development, AI Tools, Digital Business, and Content Creation.">
-  <meta name="theme-color" content="#2563eb">
-  <title>Ritesh Singh — Student, Creator & Digital Builder</title>
+  <meta name="description" content="Ritesh Singh — Student, Creator & Digital Builder. Exploring Web Development, AI Tools, Digital Business, and Media Production.">
+  <meta name="theme-color" content="#07090e">
+  <title>Ritesh Singh — Developer, Creator & Digital Builder</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Accessibility Skip Link -->
-  <a class="skip-link" href="#main">Skip to main content</a>
-
-  <!-- Top Scroll Progress Bar -->
-  <div class="scroll-progress" aria-hidden="true"></div>
-
-  <!-- SVG Fluid Ink-Warp Filter -->
-  <svg class="filter-defs" aria-hidden="true">
-    <defs>
-      <filter id="ink-warp" x="-10%" y="-20%" width="120%" height="140%">
-        <feTurbulence type="fractalNoise" baseFrequency=".008 .045" numOctaves="1" seed="4" result="noise" />
-        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" id="warpMap" />
-      </filter>
-    </defs>
-  </svg>
+  <!-- Top Telemetry & Git Status Bar -->
+  <aside class="telemetry-bar">
+    <div class="telemetry-left">
+      <span class="status-pip" id="heroStatusPill">OPEN TO INTERNSHIPS, PROJECTS &amp; COLLABORATIONS</span>
+      <span style="color:var(--text-dim);">|</span>
+      <span>git:(main)</span>
+    </div>
+    <div class="telemetry-right">
+      <a href="https://github.com/riteshsingh02010" target="_blank" rel="noopener noreferrer">github.com/riteshsingh02010 ↗</a>
+      <a href="/login" class="action-btn-admin" style="text-decoration:none;">Admin Access ⚙</a>
+    </div>
+  </aside>
 
   <!-- Site Navigation Header -->
-  <header class="site-header" id="top">
-    <a class="brand" href="#home" aria-label="Ritesh Singh home">Ritesh<span>®</span></a>
-
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#tools">Tools</a>
-      <a href="#projects">Work</a>
-      <a href="#business">Ventures</a>
-      <a href="#content">Content</a>
-      <a href="#music">Music</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="nav-actions">
-      <!-- Admin Portal Trigger Button -->
-      <button class="admin-nav-btn" type="button" data-admin-trigger title="Open Admin Portal (Passcode: ritesh2026)">
-        <span aria-hidden="true">⚙</span> Admin
-      </button>
-
-      <!-- Theme Switcher -->
-      <button class="icon-button" id="themeToggle" type="button" aria-label="Switch theme" title="Toggle theme">
-        <span aria-hidden="true">☼</span>
-      </button>
-
-      <!-- Mobile Hamburger Toggle -->
-      <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation menu">
-        <span aria-hidden="true">☰</span>
-      </button>
+  <header class="site-header">
+    <div class="brand-block">
+      <a class="brand-title" href="#top">
+        <span class="user-name">Ritesh Singh</span>
+        <span class="brand-tag">DEV // 2026</span>
+      </a>
     </div>
 
-    <!-- Mobile Drawer Menu -->
-    <nav class="mobile-nav" id="mobileMenu" aria-label="Mobile navigation">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#tools">Tools</a>
-      <a href="#projects">Work & Projects</a>
-      <a href="#business">Business Ideas</a>
-      <a href="#content">Content Lab</a>
-      <a href="#music">Music Area</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-      <a href="#admin" data-admin-trigger style="color:var(--accent)">Admin Portal ↗</a>
+    <nav class="nav-links">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#projects">Work &amp; Ventures</a>
+      <a class="nav-link" href="#media">Media Lab</a>
+      <a class="nav-link" href="#music">Audio</a>
+      <a class="nav-link" href="#resume">Resume</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </nav>
+
+    <div class="header-actions">
+      <button class="action-btn" id="themeToggle" type="button" aria-label="Toggle theme">☼</button>
+      <a class="action-btn action-btn-admin" href="/login">Admin ⚙</a>
+    </div>
   </header>
 
-  <!-- Main Content Area -->
-  <main id="main">
+  <main id="top">
     <!-- Hero Section -->
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="hero-atmosphere" aria-hidden="true">
-        <span></span>
-        <span></span>
-      </div>
-
-      <div class="container">
-        <div class="hero-top-badge">
-          <span class="pulsing-dot" aria-hidden="true"></span>
-          <span>OPEN TO INTERNSHIPS, PROJECTS &amp; COLLABORATIONS</span>
-        </div>
-
-        <div class="hero-title-container">
-          <h1 id="hero-title" class="hero-name-line">
-            <span class="hero-word" aria-label="Ritesh Singh">
-              <span class="hero-letter" style="--letter:0">R</span><span class="hero-letter" style="--letter:1">I</span><span class="hero-letter" style="--letter:2">T</span><span class="hero-letter" style="--letter:3">E</span><span class="hero-letter" style="--letter:4">S</span><span class="hero-letter" style="--letter:5">H</span>
-              <span class="hero-letter" style="--letter:6">&nbsp;</span>
-              <span class="hero-letter" style="--letter:7">S</span><span class="hero-letter" style="--letter:8">I</span><span class="hero-letter" style="--letter:9">N</span><span class="hero-letter" style="--letter:10">G</span><span class="hero-letter" style="--letter:11">H</span>
-            </span>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="section-label">STUDENT &bull; CREATOR &bull; BUILDER</div>
+          <h1>
+            Building Web Products, <span class="gradient">AI Tools</span> &amp; Digital Ventures.
           </h1>
-          <p class="hero-role">Student, Creator &amp; <em>Digital Builder</em></p>
+          <p class="hero-subtitle" id="heroHeadline">
+            Architecting High-Performance Web Products, AI Systems &amp; Creative Media.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              Explore Projects &amp; Work ↓
+            </a>
+            <a class="btn btn-secondary resume-download-link" href="assets/Ritesh-Singh-Resume.pdf" download="Ritesh-Singh-Resume.pdf">
+              Download Resume (PDF)
+            </a>
+            <a class="btn btn-secondary" id="githubProfileLink" href="https://github.com/riteshsingh02010" target="_blank" rel="noopener noreferrer">
+              GitHub ↗
+            </a>
+          </div>
         </div>
 
-        <div class="hero-bottom">
-          <p>Technology &bull; AI &bull; Web &bull; Business &bull; Media<br>Based in India.</p>
-          <a class="explore-cta" href="#projects">
-            Explore My Work <span aria-hidden="true">↓</span>
-          </a>
-          <p>Web apps.<br>Business concepts. Creative media.</p>
-        </div>
-
-        <div class="hero-rule">
-          <span>SYSTEMS</span>
-          <span>AI TOOLS</span>
-          <span>COMMERCE</span>
-          <span>CONTENT</span>
+        <!-- Interactive Developer Console Mockup -->
+        <div class="terminal-card">
+          <div class="terminal-bar-top">
+            <div class="terminal-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <span class="terminal-title">bash — ritesh@builder-termux:~</span>
+            <span>zsh</span>
+          </div>
+          <div class="terminal-body">
+            <div class="term-line">
+              <span class="term-prompt">ritesh@sys:~$</span> <span class="term-cmd">cat profile.json</span>
+            </div>
+            <div class="term-out">
+              {<br>
+              &nbsp;&nbsp;"name": "<span class="term-val">Ritesh Singh</span>",<br>
+              &nbsp;&nbsp;"focus": ["<span class="term-val">Web Dev</span>", "<span class="term-val">AI Systems</span>", "<span class="term-val">Media</span>"],<br>
+              &nbsp;&nbsp;"status": "<span class="term-prompt">Actively Building &amp; Learning</span>"<br>
+              }
+            </div>
+            <div class="term-line" style="margin-top:10px;">
+              <span class="term-prompt">ritesh@sys:~$</span> <span class="term-cmd">git log -n 1 --oneline</span>
+            </div>
+            <div class="term-out">
+              <span class="term-val">cc6e3ef</span> (HEAD -> main) feat: personal developer portfolio &amp; SQLite CMS
+            </div>
+            <div class="term-line" style="margin-top:10px;">
+              <span class="term-prompt">ritesh@sys:~$</span> <span class="term-cmd">./run_checks.sh</span>
+            </div>
+            <div class="term-out">
+              <span style="color:var(--emerald);">[OK]</span> REST API running on port 3000<br>
+              <span style="color:var(--emerald);">[OK]</span> SQLite Database synchronized<br>
+              <span style="color:var(--cyan);">[READY]</span> System responsive &amp; available
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- About Section -->
-    <section class="section about" id="about" aria-labelledby="about-title">
+    <section class="section" id="about">
       <div class="container">
-        <div class="section-label">
-          <span>01 / ABOUT RITESH</span>
-          <span>BACKGROUND &amp; VISION</span>
+        <div class="section-label">01 // ABOUT RITESH</div>
+        <div class="section-heading">
+          <h2>Curious. Resourceful. Driven by execution.</h2>
+          <p>A practical student builder combining software engineering, digital marketing, and multimedia production.</p>
         </div>
 
         <div class="about-grid">
-          <div class="name-panel reveal-pending" aria-hidden="true">
-            <span>STUDENT &amp; BUILDER</span>
-            <strong class="user-name">RITESH.</strong>
-            <span>CURIOUS. RESOURCEFUL. DRIVEN.</span>
+          <div class="about-card">
+            <h3 style="font-size:20px; font-weight:700;">Engineering Philosophy</h3>
+            <p id="aboutPrimaryBio">
+              Ritesh is a student passionately exploring technology, AI, modern web development, digital business, and content creation. He actively learns by building real-world projects, testing business concepts, editing media, and mastering software development tools.
+            </p>
+            <div style="display:flex; gap:16px; margin-top:auto; font-family:var(--font-mono); font-size:12px;">
+              <span style="color:var(--cyan);">[STACK: REACT / NEXT.JS]</span>
+              <span style="color:var(--emerald);">[TOOLS: GIT / SQLITE]</span>
+            </div>
           </div>
 
-          <div class="about-copy">
-            <h2 id="about-title" class="reveal-pending">
-              Hi, I’m Ritesh.<br>I learn by <em>building &amp; experimenting.</em>
-            </h2>
-            <div class="about-columns reveal-pending">
-              <p>
-                I am a student passionate about software engineering, artificial intelligence, digital marketing, and digital entrepreneurship. Rather than just studying theory, I actively learn by architecting <strong>real-world web products</strong>, testing <strong>agency models</strong>, and exploring <strong>modern media production</strong>.
-              </p>
-              <p>
-                From launching digital web initiatives like <strong>WEBZA</strong> and architecting agency concepts like <strong>NEXVIX MEDIA</strong>, to fine-tuning video pacing in CapCut and exploring payment gateway architectures with Razorpay, my focus is on turning curiosity into practical digital execution.
-              </p>
-            </div>
-            <div class="about-actions reveal-pending">
-              <a class="text-link resume-download-btn" href="assets/Ritesh-Singh-Resume.pdf" download="Ritesh-Singh-Resume.pdf">
-                Download my resume <span aria-hidden="true">↗</span>
-              </a>
-              <a class="text-link" href="#contact">
-                Get in touch <span aria-hidden="true">→</span>
-              </a>
+          <div class="about-card">
+            <h3 style="font-size:20px; font-weight:700;">Entrepreneurial &amp; Creative Mindset</h3>
+            <p id="aboutSubBio">
+              From architecting digital web brands like WEBZA and agency ventures like NEXVIX MEDIA to developing cross-platform applications and exploring Razorpay payment gateway mechanics, Ritesh bridges technical execution with entrepreneurial thinking.
+            </p>
+            <div style="display:flex; gap:16px; margin-top:auto; font-family:var(--font-mono); font-size:12px;">
+              <span style="color:var(--purple);">[VENTURES: WEBZA / NEXVIX]</span>
+              <span style="color:var(--amber);">[CREATIVE: CAPCUT / CANVA]</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills & Learning Focus Section -->
-    <section class="section" id="skills" aria-labelledby="skills-title">
+    <!-- Skills & Stack Section -->
+    <section class="section" id="skills">
       <div class="container">
-        <div class="section-label">
-          <span>02 / CORE FOCUS &amp; CAPABILITIES</span>
-          <span>WHAT I'M ACTIVELY LEARNING</span>
-        </div>
-
+        <div class="section-label">02 // CAPABILITIES &amp; STACK</div>
         <div class="section-heading">
-          <p class="modal-eyebrow">Capabilities</p>
-          <h2 id="skills-title" class="reveal-pending">
-            Bridging <em>Code, Marketing &amp; Media.</em>
-          </h2>
+          <h2>Technical Skills &amp; Tools Explored</h2>
+          <p>Disciplines, frameworks, and AI workflows actively practiced through hands-on development.</p>
         </div>
 
-        <div class="focus-grid">
-          <div class="focus-card reveal-pending">
-            <div class="focus-card-header">
-              <span class="focus-badge">DEV</span>
-              <h3>Web &amp; App Development</h3>
-            </div>
-            <p>Developing responsive websites, web applications, and cross-platform apps using modern HTML5, CSS3, JavaScript, React, Next.js, and Capacitor.</p>
-          </div>
-
-          <div class="focus-card reveal-pending">
-            <div class="focus-card-header">
-              <span class="focus-badge">AI &amp; AGENTS</span>
-              <h3>AI Tools &amp; Automation</h3>
-            </div>
-            <p>Leveraging Google Antigravity, Gemini, ChatGPT, and AI development workflows for rapid prototyping, workflow automation, and smart web experiences.</p>
-          </div>
-
-          <div class="focus-card reveal-pending">
-            <div class="focus-card-header">
-              <span class="focus-badge">DESIGN</span>
-              <h3>Website Design &amp; UI/UX</h3>
-            </div>
-            <p>Designing modern, accessible, high-conversion interfaces with thoughtful typography hierarchy, responsive grids, and micro-interactions.</p>
-          </div>
-
-          <div class="focus-card reveal-pending">
-            <div class="focus-card-header">
-              <span class="focus-badge">GROWTH</span>
-              <h3>Digital &amp; Social Marketing</h3>
-            </div>
-            <p>Studying brand positioning, social media marketing, audience acquisition funnels, creator matchmaking, and viral growth mechanics.</p>
-          </div>
-
-          <div class="focus-card reveal-pending">
-            <div class="focus-card-header">
-              <span class="focus-badge">BUSINESS</span>
-              <h3>Entrepreneurship &amp; Startups</h3>
-            </div>
-            <p>Formulating scalable business models, agency service delivery frameworks, client onboarding pipelines, and marketplace architectures.</p>
-          </div>
-
-          <div class="focus-card reveal-pending">
-            <div class="focus-card-header">
-              <span class="focus-badge">MEDIA</span>
-              <h3>Video Editing &amp; Content</h3>
-            </div>
-            <p>Editing YouTube Shorts and anime edits with CapCut and Canva, optimizing video retention pacing, titles, tags, and click-worthy thumbnails.</p>
-          </div>
-        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
       </div>
     </section>
 
-    <!-- Tools & Platforms Explored Section -->
-    <section class="section" id="tools" aria-labelledby="tools-title">
+    <!-- Projects & Ventures Section -->
+    <section class="section" id="projects">
       <div class="container">
-        <div class="section-label">
-          <span>03 / TOOLKIT &amp; PLATFORMS</span>
-          <span>TOOLS EXPLORED</span>
-        </div>
-
+        <div class="section-label">03 // SELECTED WORK &amp; VENTURES</div>
         <div class="section-heading">
-          <p class="modal-eyebrow">Ecosystem</p>
-          <h2 id="tools-title" class="reveal-pending">
-            Tools &amp; Platforms <em>I Work With.</em>
-          </h2>
+          <h2>Real Projects, Agency Ventures &amp; Concepts</h2>
+          <p>Every entry reflects an actual built product, learning study, or business concept.</p>
         </div>
 
-        <div class="tools-grid">
-          <div class="tool-item reveal-pending">
-            <div class="tool-top">
-              <span class="tool-name">GitHub</span>
-              <span class="tool-category">Code &amp; Versioning</span>
-            </div>
-            <p class="tool-desc">Git repositories, version control, open-source projects, and code hosting.</p>
-          </div>
-
-          <div class="tool-item reveal-pending">
-            <div class="tool-top">
-              <span class="tool-name">Google Antigravity</span>
-              <span class="tool-category">AI Development</span>
-            </div>
-            <p class="tool-desc">Agentic coding workflows, autonomous execution, and AI pairing.</p>
-          </div>
-
-          <div class="tool-item reveal-pending">
-            <div class="tool-top">
-              <span class="tool-name">Gemini</span>
-              <span class="tool-category">AI Engine</span>
-            </div>
-            <p class="tool-desc">Multimodal reasoning, complex coding analysis, and system architecture.</p>
-          </div>
-
-          <div class="tool-item reveal-pending">
-            <div class="tool-top">
-              <span class="tool-name">ChatGPT</span>
-              <span class="tool-category">AI Assistant</span>
-            </div>
-            <p class="tool-desc">Prompt engineering, copywriting, business modeling, and research.</p>
-          </div>
-
-          <div class="tool-item reveal-pending">
-            <div class="tool-top">
-              <span class="tool-name">Canva</span>
-              <span class="tool-category">Visual Design</span>
-            </div>
-            <p class="tool-desc">Graphic assets, social media banners, and high-CTR YouTube thumbnails.</p>
-          </div>
-
-          <div class="tool-item reveal-pending">
-            <div class="tool-top">
-              <span class="tool-name">CapCut</span>
-              <span class="tool-category">Video Editing</span>
-            </div>
-            <p class="tool-desc">Short-form video editing, audio beat sync, visual transitions, and Shorts pacing.</p>
-          </div>
-
-          <div class="tool-item reveal-pending">
-            <div class="tool-top">
-              <span class="tool-name">Wix</span>
-              <span class="tool-category">Web Platform</span>
-            </div>
-            <p class="tool-desc">Rapid website setup, CMS modeling, and client digital storefronts.</p>
-          </div>
-
-          <div class="tool-item reveal-pending">
-            <div class="tool-top">
-              <span class="tool-name">Odoo</span>
-              <span class="tool-category">Business Suite</span>
-            </div>
-            <p class="tool-desc">Business ERP workflows, invoicing, CRM tracking, and operations management.</p>
-          </div>
-
-          <div class="tool-item reveal-pending">
-            <div class="tool-top">
-              <span class="tool-name">Razorpay Concepts</span>
-              <span class="tool-category">FinTech &amp; Payments</span>
-            </div>
-            <p class="tool-desc">Payment gateways, checkout lifecycles, and webhook signature verification.</p>
-          </div>
-
-          <div class="tool-item reveal-pending">
-            <div class="tool-top">
-              <span class="tool-name">Modern Web Tech</span>
-              <span class="tool-category">Frontend &amp; APIs</span>
-            </div>
-            <p class="tool-desc">HTML5, CSS3, JavaScript ES6+, React, Next.js, and REST APIs.</p>
-          </div>
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Work</button>
+          <button class="filter-btn" data-filter="web">Web Brands</button>
+          <button class="filter-btn" data-filter="agency">AI &amp; Agency</button>
+          <button class="filter-btn" data-filter="apps">Apps &amp; Systems</button>
+          <button class="filter-btn" data-filter="media">Media &amp; Video</button>
         </div>
+
+        <div class="projects-grid" id="projectsGrid"></div>
       </div>
     </section>
 
-    <!-- Selected Projects & Concepts Section -->
-    <section class="work-section" id="projects" aria-labelledby="projects-title">
+    <!-- Content & Media Lab Section -->
+    <section class="section" id="media">
       <div class="container">
-        <div class="section-label">
-          <span>04 / PROJECTS &amp; EXPLORATIONS</span>
-          <span>PORTFOLIO SHOWCASE</span>
-        </div>
-
-        <div class="work-heading">
-          <p>
-            Real projects,<br>agency ventures &amp; prototypes.
-          </p>
-          <h2 id="projects-title">
-            WORK<span>®</span>
-          </h2>
-          <span class="work-count">01—09</span>
-        </div>
-
-        <!-- Filter Chips -->
-        <div class="filter-bar" role="toolbar" aria-label="Filter projects by technology">
-          <button class="filter-chip active" data-filter="all" aria-pressed="true" type="button">All work</button>
-          <button class="filter-chip" data-filter="web" aria-pressed="false" type="button">Web Brands</button>
-          <button class="filter-chip" data-filter="agency" aria-pressed="false" type="button">AI &amp; Agency</button>
-          <button class="filter-chip" data-filter="apps" aria-pressed="false" type="button">Apps &amp; Systems</button>
-          <button class="filter-chip" data-filter="media" aria-pressed="false" type="button">Content &amp; Media</button>
-        </div>
-
-        <!-- Project Grid Loaded Dynamically -->
-        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
-
-        <p class="empty-state" id="projectsEmpty" hidden>No projects found in this category.</p>
-      </div>
-    </section>
-
-    <!-- Business & Startup Ventures Section -->
-    <section class="section" id="business" aria-labelledby="business-title">
-      <div class="container">
-        <div class="section-label">
-          <span>05 / BUSINESS &amp; STARTUP IDEAS</span>
-          <span>VENTURE ARCHITECTURE</span>
-        </div>
-
+        <div class="section-label">04 // CONTENT CREATION &amp; VIDEO LAB</div>
         <div class="section-heading">
-          <p class="modal-eyebrow">Entrepreneurship</p>
-          <h2 id="business-title" class="reveal-pending">
-            Digital Ventures &amp; <em>Agency Concepts.</em>
-          </h2>
+          <h2>YouTube, Shorts &amp; Video Production</h2>
+          <p>Treating short-form content creation and audience retention as an engineering discipline.</p>
         </div>
 
-        <div class="focus-grid">
-          <div class="focus-card reveal-pending">
-            <div class="focus-card-header">
-              <span class="focus-badge">WEB BRAND</span>
-              <h3>WEBZA</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-top">
+              <span class="skill-cat">RETENTION</span>
+              <span class="skill-prof">Shorts &amp; Edits</span>
             </div>
-            <p>Personal and project web agency brand crafting modern websites, tailored digital storefronts, and responsive interfaces for small businesses and creators.</p>
-          </div>
-
-          <div class="focus-card reveal-pending">
-            <div class="focus-card-header">
-              <span class="focus-badge">AI AGENCY</span>
-              <h3>NEXVIX MEDIA</h3>
-            </div>
-            <p>Full-service digital marketing agency concept leveraging generative AI workflows, multi-channel social management, and influencer marketing campaigns.</p>
-          </div>
-
-          <div class="focus-card reveal-pending">
-            <div class="focus-card-header">
-              <span class="focus-badge">AI STARTUP</span>
-              <h3>BOOSTMYBRAND.AI</h3>
-            </div>
-            <p>AI-driven business growth concept empowering brands to automate copywriting, optimize social discovery, and generate high-converting promotional assets.</p>
-          </div>
-
-          <div class="focus-card reveal-pending">
-            <div class="focus-card-header">
-              <span class="focus-badge">MATCHMAKING</span>
-              <h3>INFLUENCER MARKETING SYSTEM</h3>
-            </div>
-            <p>Framework for discovering niche creators, automating brand outreach pitches, managing campaign deliverables, and tracking conversion ROI.</p>
-          </div>
-
-          <div class="focus-card reveal-pending">
-            <div class="focus-card-header">
-              <span class="focus-badge">ON-DEMAND</span>
-              <h3>LOCAL SERVICE MARKETPLACE</h3>
-            </div>
-            <p>On-demand marketplace mobile app concept connecting urban customers with verified local technicians for AC repair, car wash, home cleaning, and urgent delivery.</p>
-          </div>
-
-          <div class="focus-card reveal-pending">
-            <div class="focus-card-header">
-              <span class="focus-badge">FINTECH</span>
-              <h3>PAYMENT GATEWAY INFRASTRUCTURE</h3>
-            </div>
-            <p>Architecture study exploring payment settlement workflows, webhook signature cryptography, escrow, and Razorpay-style payment tokenization.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Content Creation & Media Lab Section -->
-    <section class="section" id="content" aria-labelledby="content-title">
-      <div class="container">
-        <div class="section-label">
-          <span>06 / CONTENT CREATION &amp; VIDEO LAB</span>
-          <span>MEDIA PRODUCTION</span>
-        </div>
-
-        <div class="section-heading">
-          <p class="modal-eyebrow">Creative Media</p>
-          <h2 id="content-title" class="reveal-pending">
-            YouTube, Shorts &amp; <em>Video Production.</em>
-          </h2>
-        </div>
-
-        <div class="media-grid">
-          <div class="media-card reveal-pending">
-            <span class="media-pill">VIRAL PACING</span>
             <h3>YouTube Shorts &amp; Anime Edits</h3>
-            <p>Crafting high-energy vertical videos with dynamic cuts, keyframe motion, sound effect emphasis, and rhythmically synchronized audio beats.</p>
+            <p>Vertical video editing with fast rhythmic cuts, sound effect emphasis, and music beat alignment to capture audience interest in the first 2 seconds.</p>
           </div>
 
-          <div class="media-card reveal-pending">
-            <span class="media-pill">POST-PRODUCTION</span>
-            <h3>CapCut Editing Workflows</h3>
-            <p>Mastering vertical timeline editing, speed ramps, smooth transitions, text callouts, auto-captions, and optimizing the critical first 2-second hook.</p>
+          <div class="skill-card">
+            <div class="skill-top">
+              <span class="skill-cat">POST-PRODUCTION</span>
+              <span class="skill-prof">CapCut</span>
+            </div>
+            <h3>CapCut Editing &amp; Pacing</h3>
+            <p>Speed ramping, dynamic motion keyframes, auto-captions, and visual punch-ins to maintain 100%+ viewer retention on vertical algorithms.</p>
           </div>
 
-          <div class="media-card reveal-pending">
-            <span class="media-pill">VISUAL HOOKS</span>
-            <h3>Canva Thumbnail Compositions</h3>
-            <p>Designing high-contrast, clickable thumbnail graphics with clean focal points, expressive color palettes, and bold typography hierarchy.</p>
+          <div class="skill-card">
+            <div class="skill-top">
+              <span class="skill-cat">VISUALS</span>
+              <span class="skill-prof">Canva</span>
+            </div>
+            <h3>Thumbnail Composition</h3>
+            <p>Designing high-contrast, clean focal point graphics with bold typography and psychological color triggers to maximize click-through rate.</p>
           </div>
 
-          <div class="media-card reveal-pending">
-            <span class="media-pill">ALGORITHM SEO</span>
-            <h3>Metadata &amp; Retention Optimization</h3>
-            <p>Analyzing viewer retention curves, A/B testing title hooks, strategic keyword tagging, and understanding audience engagement psychology.</p>
+          <div class="skill-card">
+            <div class="skill-top">
+              <span class="skill-cat">GROWTH</span>
+              <span class="skill-prof">Analytics</span>
+            </div>
+            <h3>Metadata &amp; Retention SEO</h3>
+            <p>Analyzing viewer retention drop-offs, testing hook titles, optimizing tags, and reverse-engineering algorithmic distribution mechanics.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Music Showcase Section -->
-    <section class="section" id="music" aria-labelledby="music-title">
+    <section class="section" id="music">
       <div class="container">
-        <div class="section-label">
-          <span>07 / MUSIC SHOWCASE</span>
-          <span>AUDIO &amp; SOUNDSCAPES</span>
-        </div>
-
+        <div class="section-label">05 // AUDIO &amp; MUSIC SHOWCASE</div>
         <div class="section-heading">
-          <p class="modal-eyebrow">Sound &amp; Mood</p>
-          <h2 id="music-title" class="reveal-pending">
-            Music for <em>Focus &amp; Creation.</em>
-          </h2>
+          <h2>Soundscapes &amp; Focus Beats</h2>
+          <p>Curated audio atmospheres for deep coding and creative sessions.</p>
         </div>
 
-        <div class="music-container">
-          <!-- Interactive Now Playing Audio Card -->
-          <div class="music-player-card" id="musicPlayerCard">
-            <div class="player-artwork-wrap">
+        <div class="audio-player-shell">
+          <div>
+            <div class="player-artwork-box">
               <img id="playerArtwork" src="assets/images/track-chill.svg" alt="Track artwork" loading="lazy">
-              <div class="player-disc" aria-hidden="true"></div>
             </div>
-
-            <div class="player-meta">
+            <div class="track-meta">
               <h3 id="playerTrackTitle">Midnight Focus</h3>
               <p id="playerTrackArtist">Ritesh Singh &bull; Lo-Fi Coding Beats</p>
             </div>
 
-            <div class="player-timeline">
-              <div class="timeline-bar" id="playerTimelineBar" role="slider" aria-label="Audio scrubber">
-                <div class="timeline-progress" id="playerProgress"></div>
+            <div class="scrubber-wrap">
+              <div class="scrubber-bar" id="scrubberBar">
+                <div class="scrubber-fill" id="scrubberFill"></div>
               </div>
-              <div class="timeline-time">
-                <span id="playerTimeCur">0:00</span>
-                <span id="playerTimeDur">0:10</span>
+              <div class="scrubber-time">
+                <span id="curTime">0:00</span>
+                <span id="durTime">0:10</span>
               </div>
             </div>
 
-            <div class="player-controls">
-              <button class="player-btn" id="playerPrevBtn" type="button" aria-label="Previous track">⏮</button>
-              <button class="player-btn player-btn-main" id="playerPlayBtn" type="button" aria-label="Play or pause">▶</button>
-              <button class="player-btn" id="playerNextBtn" type="button" aria-label="Next track">⏭</button>
+            <div class="player-btns">
+              <button class="play-btn" id="playBtn" type="button" aria-label="Play audio">▶</button>
             </div>
           </div>
 
-          <!-- Public Visible Track List -->
           <div>
-            <h3 style="font-size: 20px; font-weight:600; margin-bottom: 20px;">Curated Tracks</h3>
-            <div class="track-list" id="trackList"></div>
-            <p style="color:var(--muted); font-size:13px; font-family:var(--font-mono); margin-top:20px;">
-              * Tracks can be added, updated, or hidden anytime via the Admin Portal.
+            <h3 style="font-size:16px; font-weight:700; margin-bottom:14px; font-family:var(--font-mono); color:var(--text-muted);">
+              TRACK PLAYLIST (SYNCED FROM DATABASE)
+            </h3>
+            <div class="tracklist-wrap" id="trackList"></div>
+            <p style="color:var(--text-dim); font-size:12px; font-family:var(--font-mono); margin-top:18px;">
+              * Tracks can be added, updated, or reordered in real-time via the Admin Portal.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Professional Resume Section -->
-    <section class="section" id="resume" aria-labelledby="resume-title">
+    <!-- Resume Section -->
+    <section class="section" id="resume">
       <div class="container">
-        <div class="section-label">
-          <span>08 / PROFESSIONAL RESUME</span>
-          <span>QUALIFICATIONS</span>
-        </div>
-
-        <div class="resume-box reveal-pending">
-          <div class="resume-content">
-            <p class="modal-eyebrow">Curriculum Vitae</p>
-            <h2 id="resume-title">Ritesh Singh — Resume</h2>
-            <p>
-              A consolidated document detailing my technical capabilities in web and app engineering, explored tools, startup agency concepts, and student background. Available for direct download and viewing.
-            </p>
-
-            <div class="resume-highlights">
-              <span>Frontend &amp; Cross-Platform (React, Next.js, Tailwind, Capacitor, Android)</span>
-              <span>AI Integration (Google Antigravity, Gemini API, ChatGPT, Prompting)</span>
-              <span>Digital Business Modeling (WEBZA, Nexvix Media, BoostMyBrand.ai)</span>
-              <span>Media Production (CapCut Video Pacing, Canva Thumbnails, Shorts SEO)</span>
-            </div>
-
-            <div style="display:flex; gap:16px; flex-wrap:wrap;">
-              <a class="btn btn-primary resume-download-btn" href="assets/Ritesh-Singh-Resume.pdf" download="Ritesh-Singh-Resume.pdf">
-                Download Resume (PDF) <span aria-hidden="true">↓</span>
-              </a>
-              <a class="btn btn-secondary resume-download-btn" href="assets/Ritesh-Singh-Resume.pdf" target="_blank" rel="noopener noreferrer">
-                View in Browser <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="resume-card-actions">
-            <span style="font-family:var(--font-mono); font-size:12px; color:var(--muted);">DOCUMENT SPECS</span>
-            <strong style="font-size: 18px;">Ritesh-Singh-Resume.pdf</strong>
-            <p style="font-size: 13px; color:var(--muted);">Format: Standard PDF 1.4<br>Updated: <span id="resumeLastUpdated">September 2026</span></p>
-            <button class="btn btn-secondary" type="button" data-admin-trigger style="font-size: 11px;">
-              Admin: Replace Resume ↗
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GitHub Section -->
-    <section class="section" id="github" aria-labelledby="github-title">
-      <div class="container">
-        <div class="section-label">
-          <span>09 / GITHUB &amp; OPEN SOURCE</span>
-          <span>DEVELOPMENT ACTIVITY</span>
-        </div>
-
-        <div class="github-banner reveal-pending">
-          <div class="github-meta">
-            <p class="modal-eyebrow">Code Repositories</p>
-            <h3 id="github-title">Explore My Repositories on GitHub</h3>
-            <p>
-              Follow along with my ongoing software development journey. All open-source experiments, personal projects, frontend templates, and code studies are documented on GitHub.
-            </p>
-          </div>
-
+        <div class="section-label">06 // PROFESSIONAL RESUME</div>
+        <div class="resume-box">
           <div>
-            <a class="btn btn-primary" href="https://github.com/riteshsingh02010" target="_blank" rel="noopener noreferrer" style="white-space:nowrap;">
-              Visit GitHub Profile <span aria-hidden="true">↗</span>
-            </a>
+            <h2 style="font-size:28px; font-weight:800; margin-bottom:8px;">Ritesh Singh — Resume</h2>
+            <p style="color:var(--text-muted); font-size:14.5px; margin-bottom:18px;">
+              Official curriculum vitae detailing web engineering, AI workflow capabilities, media projects, and student background.
+            </p>
+            <div style="font-family:var(--font-mono); font-size:12px; color:var(--text-dim); margin-bottom:20px;">
+              LAST REVISED: <span id="resumeLastUpdated" style="color:var(--cyan);">September 2026</span> &bull; FORMAT: PDF
+            </div>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <a class="btn btn-primary resume-download-link" href="assets/Ritesh-Singh-Resume.pdf" download="Ritesh-Singh-Resume.pdf">
+                Download PDF Resume ↓
+              </a>
+              <a class="btn btn-secondary resume-download-link" href="assets/Ritesh-Singh-Resume.pdf" target="_blank" rel="noopener noreferrer">
+                View in Browser ↗
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-grid">
-        <div>
-          <div class="section-heading">
-            <p class="modal-eyebrow">Get In Touch</p>
-            <h2 id="contact-title">
-              Have an idea or opportunity?<br>Let's make it <em>real.</em>
-            </h2>
-          </div>
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-label">07 // GET IN TOUCH</div>
+        <div class="section-heading">
+          <h2>Start a conversation.</h2>
+          <p>Reach out for internships, project collaborations, or discussing digital ventures.</p>
+        </div>
 
+        <div class="contact-grid">
           <div class="contact-card">
-            <div class="contact-link-row">
+            <h3 style="font-size:18px; font-weight:700;">Direct Contact Channels</h3>
+            <div class="contact-info-row">
               <span class="contact-label">Email</span>
-              <a class="user-email" href="mailto:Riteshsingh02010@gmail.com">Riteshsingh02010@gmail.com</a>
+              <a class="user-email" href="mailto:Riteshsingh02010@gmail.com" style="color:var(--cyan);">Riteshsingh02010@gmail.com</a>
             </div>
-            <div class="contact-link-row">
+            <div class="contact-info-row">
               <span class="contact-label">Phone</span>
               <a class="user-phone" href="tel:+917898195460">+91 7898195460</a>
             </div>
-            <div class="contact-link-row">
+            <div class="contact-info-row">
               <span class="contact-label">GitHub</span>
               <a href="https://github.com/riteshsingh02010" target="_blank" rel="noopener noreferrer">github.com/riteshsingh02010 ↗</a>
             </div>
-            <div class="contact-link-row">
-              <span class="contact-label">Resume</span>
-              <a class="text-link resume-download-btn" href="assets/Ritesh-Singh-Resume.pdf" download="Ritesh-Singh-Resume.pdf">
-                Download resume (PDF) ↗
-              </a>
+            <div class="contact-info-row">
+              <span class="contact-label">Location</span>
+              <span>India</span>
             </div>
           </div>
+
+          <!-- Real Functional Contact Form (Saves into SQLite DB) -->
+          <form class="contact-form" id="contactForm">
+            <div class="form-field">
+              <label for="contactName">Your Name</label>
+              <input id="contactName" required minlength="2" placeholder="Jane Doe">
+            </div>
+
+            <div class="form-field">
+              <label for="contactEmail">Email Address</label>
+              <input id="contactEmail" type="email" required placeholder="jane@example.com">
+            </div>
+
+            <div class="form-field">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" rows="4" required minlength="10" placeholder="Tell Ritesh about your project or opportunity..."></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit" id="contactSubmitBtn">
+              Send Message →
+            </button>
+
+            <div class="form-success-alert" id="contactSuccessAlert" hidden></div>
+            <div style="color:var(--rose); font-size:12px;" id="contactErrorAlert" hidden></div>
+          </form>
         </div>
-
-        <!-- Interactive Contact Form -->
-        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xeajknlo" method="POST">
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input id="name" name="name" autocomplete="name" required minlength="2" placeholder="Your name">
-            <small class="field-error" id="nameError"></small>
-          </div>
-
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
-            <small class="field-error" id="emailError"></small>
-          </div>
-
-          <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required minlength="10" placeholder="Tell me about your project, idea, or opportunity."></textarea>
-            <small class="field-error" id="messageError"></small>
-          </div>
-
-          <button class="btn btn-primary" type="submit">
-            Send message <span aria-hidden="true">→</span>
-          </button>
-
-          <p class="form-success-alert" id="formSuccess" role="status" hidden>
-            Thank you! Your message has been sent successfully.
-          </p>
-        </form>
       </div>
     </section>
   </main>
 
   <!-- Site Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <a class="brand" href="#home">Ritesh<span>®</span></a>
-        <div class="footer-links">
-          <a class="user-email" href="mailto:Riteshsingh02010@gmail.com">Email ↗</a>
-          <a href="https://github.com/riteshsingh02010" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          <button type="button" data-admin-trigger style="color:var(--muted); font-family:var(--font-mono); font-size:13px;">
-            Admin Portal ⚙
-          </button>
-          <a href="#top">Back to top ↑</a>
-        </div>
+    <div class="container footer-inner">
+      <div>
+        <span>&copy; <span id="year">2026</span> <strong class="user-name">Ritesh Singh</strong>. All rights reserved.</span>
       </div>
-      <div class="footer-bottom">
-        <p>© <span id="year">2026</span> <span class="user-name">Ritesh Singh</span>. All rights reserved.</p>
-        <p>Student, Creator &amp; Digital Builder.</p>
+      <div style="display:flex; gap:18px;">
+        <a class="user-email" href="mailto:Riteshsingh02010@gmail.com">Email</a>
+        <a href="https://github.com/riteshsingh02010" target="_blank">GitHub</a>
+        <a href="/login" style="color:var(--cyan);">Admin Portal ⚙</a>
+        <a href="#top">Back to top ↑</a>
       </div>
     </div>
   </footer>
 
-  <!-- Full-Detail Project Modal Dialog -->
-  <dialog class="project-modal" id="projectModal" aria-labelledby="modalTitle">
+  <!-- Modal Dialog for Project Inspection -->
+  <dialog class="modal-dialog" id="projectModal">
     <div class="modal-shell">
-      <button class="modal-close" id="modalClose" type="button" aria-label="Close project modal">✕</button>
-      <div class="modal-content">
-        <div class="modal-media">
-          <img id="modalImage" src="assets/images/webza.svg" alt="Project preview" loading="lazy">
-        </div>
-        <div class="modal-info">
-          <p class="modal-eyebrow" id="modalCategory">Category</p>
-          <h2 id="modalTitle">Project Title</h2>
-          <p class="modal-description" id="modalDescription">Description</p>
+      <button class="modal-close" id="modalClose" type="button">✕</button>
+      <div id="modalMedia" style="margin-bottom:20px;"></div>
+      <div class="section-label" id="modalCategory" style="margin-bottom:8px;">CATEGORY</div>
+      <h2 id="modalTitle" style="font-size:28px; font-weight:800; margin-bottom:12px;">Project Title</h2>
+      <p id="modalDescription" style="color:var(--text-muted); font-size:15px; line-height:1.6; margin-bottom:20px;"></p>
 
-          <div class="modal-tech" id="modalTech"></div>
+      <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:24px;" id="modalTech"></div>
 
-          <div class="detail-block">
-            <h3>Key Features</h3>
-            <ul id="modalFeatures"></ul>
-          </div>
+      <div style="margin-bottom:20px;">
+        <h4 style="font-size:14px; font-family:var(--font-mono); color:var(--cyan); margin-bottom:8px;">ARCHITECTURE &amp; DETAILS</h4>
+        <p id="modalAiRole" style="color:var(--text-muted); font-size:14px; line-height:1.6;"></p>
+      </div>
 
-          <div class="detail-block">
-            <h3>Architecture &amp; Role</h3>
-            <p id="modalAiRole"></p>
-          </div>
+      <div style="margin-bottom:20px;">
+        <h4 style="font-size:14px; font-family:var(--font-mono); color:var(--emerald); margin-bottom:8px;">KEY FEATURES</h4>
+        <ul id="modalFeatures" style="padding-left:20px; color:var(--text-muted); font-size:13.5px; line-height:1.6;"></ul>
+      </div>
 
-          <div class="detail-block">
-            <h3>Learning Outcome</h3>
-            <p id="modalImpact"></p>
-          </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:14px; font-family:var(--font-mono); color:var(--purple); margin-bottom:8px;">LEARNING OUTCOME</h4>
+        <p id="modalImpact" style="color:var(--text-muted); font-size:14px;"></p>
+      </div>
 
-          <!-- Dynamic Action Buttons -->
-          <div class="modal-actions">
-            <a class="btn btn-primary" id="modalDemo" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
-            <a class="btn btn-secondary" id="modalGithub" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-            <a class="btn btn-secondary" id="modalDownload">Download ↓</a>
-          </div>
-
-          <!-- Collapsible README Section -->
-          <details class="readme-details">
-            <summary><span id="modalReadmeTitle">Project Specification</span></summary>
-            <div id="modalReadme" class="readme-content"></div>
-          </details>
-        </div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap; padding-top:16px; border-top:1px solid var(--border);">
+        <a class="btn btn-primary" id="modalDemo" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+        <a class="btn btn-secondary" id="modalCode" target="_blank" rel="noopener noreferrer">GitHub Code ↗</a>
+        <a class="btn btn-secondary" id="modalDl">Download Asset ↓</a>
       </div>
     </div>
   </dialog>
 
-  <!-- Admin Management Portal Modal -->
-  <dialog class="admin-modal" id="adminModal" aria-labelledby="adminModalTitle">
-    <div class="modal-shell">
-      <button class="modal-close" id="adminClose" type="button" aria-label="Close admin modal">✕</button>
-
-      <!-- Passcode Login Prompt -->
-      <div id="adminPasscodeSection">
-        <div class="admin-header">
-          <p class="modal-eyebrow">Admin Access</p>
-          <h2 id="adminModalTitle">Portfolio Control Center</h2>
-          <p style="color:var(--muted); font-size:14px; margin-top:8px;">
-            Manage projects, music tracks, resume files, and profile details directly. Enter your passcode to continue.
-          </p>
-        </div>
-
-        <form id="adminPasscodeForm" style="max-width:380px; margin-top:20px;">
-          <div class="form-field">
-            <label for="adminPasscode">Admin Passcode (Default: ritesh2026)</label>
-            <input id="adminPasscode" type="password" required placeholder="Enter passcode">
-            <small class="field-error" id="adminPasscodeError"></small>
-          </div>
-          <button class="btn btn-primary" type="submit" style="margin-top:12px;">
-            Unlock Control Center →
-          </button>
-        </form>
-      </div>
-
-      <!-- Authenticated Admin Dashboard -->
-      <div id="adminDashboardSection" hidden>
-        <div class="admin-header">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <div>
-              <p class="modal-eyebrow">Content Management</p>
-              <h2>Portfolio Admin Portal</h2>
-            </div>
-            <span style="font-family:var(--font-mono); font-size:11px; color:var(--accent); background:var(--accent-glow); padding:4px 10px; border-radius:4px;">
-              AUTHENTICATED
-            </span>
-          </div>
-        </div>
-
-        <!-- Admin Tab Navigation -->
-        <div class="admin-tabs" role="tablist">
-          <button class="admin-tab-btn active" type="button" data-target-pane="paneProjects">Projects</button>
-          <button class="admin-tab-btn" type="button" data-target-pane="paneMusic">Music</button>
-          <button class="admin-tab-btn" type="button" data-target-pane="paneResume">Resume</button>
-          <button class="admin-tab-btn" type="button" data-target-pane="paneProfile">Profile &amp; Bio</button>
-          <button class="admin-tab-btn" type="button" data-target-pane="paneBackup">Backup &amp; Sync</button>
-        </div>
-
-        <!-- Pane: Projects -->
-        <div class="admin-tab-pane active" id="paneProjects">
-          <h3 style="font-size:18px; margin-bottom:12px;">Active Projects &amp; Concepts</h3>
-          <table class="admin-table">
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Category</th>
-                <th>Status</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody id="adminProjectsTbody"></tbody>
-          </table>
-
-          <div style="margin-top:32px; padding:24px; background:var(--panel-card); border-radius:8px;">
-            <h4 style="font-size:16px; margin-bottom:16px;">Add New Project or Idea</h4>
-            <form id="adminAddProjectForm" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-              <div class="form-field">
-                <label for="newProjTitle">Title</label>
-                <input id="newProjTitle" required placeholder="Project Name">
-              </div>
-              <div class="form-field">
-                <label for="newProjCategory">Category</label>
-                <input id="newProjCategory" required placeholder="e.g. Web Brand, AI Agency">
-              </div>
-              <div class="form-field">
-                <label for="newProjStatus">Status Label</label>
-                <input id="newProjStatus" required placeholder="e.g. Active Brand, Concept, Live">
-              </div>
-              <div class="form-field">
-                <label for="newProjStatusType">Status Type</label>
-                <select id="newProjStatusType">
-                  <option value="concept">Concept</option>
-                  <option value="active">Active</option>
-                  <option value="live">Live</option>
-                  <option value="prototype">Prototype</option>
-                </select>
-              </div>
-              <div class="form-field" style="grid-column:1/-1;">
-                <label for="newProjDesc">Short Description</label>
-                <textarea id="newProjDesc" rows="2" required placeholder="Summary description"></textarea>
-              </div>
-              <div class="form-field" style="grid-column:1/-1;">
-                <label for="newProjDetails">In-Depth Details</label>
-                <textarea id="newProjDetails" rows="3" placeholder="Explain the problem, concept, or technical architecture"></textarea>
-              </div>
-              <div class="form-field">
-                <label for="newProjTech">Tech/Tools (Comma separated)</label>
-                <input id="newProjTech" placeholder="React, Node.js, AI, Canva">
-              </div>
-              <div class="form-field">
-                <label for="newProjImage">Image or SVG Path</label>
-                <input id="newProjImage" placeholder="assets/images/webza.svg">
-              </div>
-              <div class="form-field">
-                <label for="newProjDemo">Live Demo URL (Optional)</label>
-                <input id="newProjDemo" placeholder="https://...">
-              </div>
-              <div class="form-field">
-                <label for="newProjGithub">GitHub URL (Optional)</label>
-                <input id="newProjGithub" placeholder="https://github.com/...">
-              </div>
-              <div class="form-field">
-                <label for="newProjDownload">Download URL (Optional)</label>
-                <input id="newProjDownload" placeholder="assets/myfile.zip or .apk">
-              </div>
-              <div class="form-field">
-                <label for="newProjDownloadLabel">Download Button Label</label>
-                <input id="newProjDownloadLabel" placeholder="Download APK / Source">
-              </div>
-              <div class="form-field" style="grid-column:1/-1;">
-                <label for="newProjFeatures">Key Features (One per line)</label>
-                <textarea id="newProjFeatures" rows="3" placeholder="Feature 1&#10;Feature 2&#10;Feature 3"></textarea>
-              </div>
-              <input type="hidden" id="newProjId">
-              <button class="btn btn-primary" type="submit" style="grid-column:1/-1;">Save Project →</button>
-            </form>
-          </div>
-        </div>
-
-        <!-- Pane: Music -->
-        <div class="admin-tab-pane" id="paneMusic">
-          <h3 style="font-size:18px; margin-bottom:12px;">Showcase Music Tracks</h3>
-          <table class="admin-table">
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Genre</th>
-                <th>Visibility</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody id="adminMusicTbody"></tbody>
-          </table>
-
-          <div style="margin-top:32px; padding:24px; background:var(--panel-card); border-radius:8px;">
-            <h4 style="font-size:16px; margin-bottom:16px;">Add Music Track</h4>
-            <form id="adminAddMusicForm" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-              <div class="form-field">
-                <label for="newTrackTitle">Track Title</label>
-                <input id="newTrackTitle" required placeholder="Track Name">
-              </div>
-              <div class="form-field">
-                <label for="newTrackArtist">Artist / Attribution</label>
-                <input id="newTrackArtist" placeholder="Ritesh Singh">
-              </div>
-              <div class="form-field">
-                <label for="newTrackGenre">Genre / Vibe</label>
-                <input id="newTrackGenre" required placeholder="Lo-Fi Coding Beats">
-              </div>
-              <div class="form-field">
-                <label for="newTrackDuration">Duration</label>
-                <input id="newTrackDuration" placeholder="0:10">
-              </div>
-              <div class="form-field">
-                <label for="newTrackAudio">Audio Source URL</label>
-                <input id="newTrackAudio" required placeholder="assets/audio/midnight-focus.wav">
-              </div>
-              <div class="form-field">
-                <label for="newTrackArtwork">Artwork URL</label>
-                <input id="newTrackArtwork" placeholder="assets/images/track-chill.svg">
-              </div>
-              <div class="form-field" style="grid-column:1/-1; display:flex; align-items:center; gap:8px;">
-                <input id="newTrackVisible" type="checkbox" checked style="width:18px; height:18px;">
-                <label for="newTrackVisible" style="margin:0; cursor:pointer;">Visible publicly on portfolio</label>
-              </div>
-              <button class="btn btn-primary" type="submit" style="grid-column:1/-1;">Add Track →</button>
-            </form>
-          </div>
-        </div>
-
-        <!-- Pane: Resume -->
-        <div class="admin-tab-pane" id="paneResume">
-          <h3 style="font-size:18px; margin-bottom:12px;">Resume File Management</h3>
-          <div style="padding:24px; background:var(--panel-card); border-radius:8px;">
-            <p style="color:var(--muted); font-size:14px; margin-bottom:16px;">
-              Upload a new PDF file to replace the public resume. The file will be stored directly in client storage so visitors immediately download the updated version.
-            </p>
-            <div class="form-field" style="margin-bottom:20px;">
-              <label for="adminResumeFile">Upload New PDF Resume</label>
-              <input id="adminResumeFile" type="file" accept="application/pdf">
-            </div>
-            <div style="display:flex; gap:12px;">
-              <a class="btn btn-secondary resume-download-btn" href="assets/Ritesh-Singh-Resume.pdf" target="_blank">Test Current PDF ↗</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pane: Profile -->
-        <div class="admin-tab-pane" id="paneProfile">
-          <h3 style="font-size:18px; margin-bottom:12px;">Edit Profile Information</h3>
-          <form id="adminProfileForm" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-            <div class="form-field">
-              <label for="editProfName">Full Name</label>
-              <input id="editProfName" required>
-            </div>
-            <div class="form-field">
-              <label for="editProfRole">Role / Headline</label>
-              <input id="editProfRole" required>
-            </div>
-            <div class="form-field">
-              <label for="editProfEmail">Email</label>
-              <input id="editProfEmail" type="email" required>
-            </div>
-            <div class="form-field">
-              <label for="editProfPhone">Phone</label>
-              <input id="editProfPhone" required>
-            </div>
-            <div class="form-field" style="grid-column:1/-1;">
-              <label for="editProfGithub">GitHub Profile URL</label>
-              <input id="editProfGithub">
-            </div>
-            <div class="form-field" style="grid-column:1/-1;">
-              <label for="editProfBio">Bio / Summary</label>
-              <textarea id="editProfBio" rows="4"></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit" style="grid-column:1/-1;">Update Profile Details →</button>
-          </form>
-        </div>
-
-        <!-- Pane: Backup & Sync -->
-        <div class="admin-tab-pane" id="paneBackup">
-          <h3 style="font-size:18px; margin-bottom:12px;">Data Backup &amp; Transfer</h3>
-          <p style="color:var(--muted); font-size:14px; margin-bottom:20px;">
-            Download your portfolio database as a JSON file, or restore from a previously exported backup.
-          </p>
-          <div style="display:flex; gap:16px; flex-wrap:wrap;">
-            <button class="btn btn-primary" id="exportDataBtn" type="button">Export site-data.json ↓</button>
-            <label class="btn btn-secondary" style="cursor:pointer;">
-              Import site-data.json ↑
-              <input id="importDataInput" type="file" accept=".json" style="display:none;">
-            </label>
-            <button class="btn btn-danger" id="resetDataBtn" type="button">Reset Factory Defaults ↺</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </dialog>
-
-  <!-- Scripts -->
-  <script src="js/script.js" defer></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
