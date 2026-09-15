@@ -1071,59 +1071,7 @@ summary {
   color: var(--accent);
 }
 
-/* ==========================================================================
-   SOUNDSCAPES DECK (Sleek Architectural Layout)
-   ========================================================================== */
-.soundscape-deck {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  padding: 36px;
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 36px;
-  align-items: center;
-}
 
-.audio-controls-top {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
-.audio-artwork-box {
-  width: 72px;
-  height: 72px;
-  background: #19202f;
-  border-radius: 4px;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  border: 1px solid var(--line);
-}
-
-.audio-artwork-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.audio-scrubber-bar {
-  height: 5px;
-  background: var(--line);
-  border-radius: 3px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 8px;
-}
-
-.audio-scrubber-fill {
-  height: 100%;
-  width: 0%;
-  background: var(--blue);
-}
 
 /* ==========================================================================
    CONTACT SECTION (Editorial Underline Form)
@@ -1415,7 +1363,6 @@ summary {
   .hero { min-height: 740px; }
   .expertise { padding-top: 15px; }
   .work-heading h2 { font-size: 22vw; }
-  .soundscape-deck { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 700px) {
@@ -1473,7 +1420,6 @@ summary {
   .cover-title { font-size: 62px; }
   .project-title-row h3 { font-size: 22px; }
   
-  .soundscape-deck { padding: 22px; gap: 24px; }
   .contact-grid { grid-template-columns: 1fr; gap: 30px; }
   .section-heading h2 { font-size: 44px; }
   .contact-form { padding: 20px; }

@@ -360,11 +360,12 @@ function closeModal() {
    Soundscapes Audio Engine
    ========================================================================== */
 function initAudio() {
+  const playBtn = $('#audioPlayToggleBtn');
+  if (!playBtn) return;
   const tracks = state.music;
-  if (!tracks.length) return;
+  if (!tracks || !tracks.length) return;
 
   const audio = state.audio;
-  const playBtn = $('#audioPlayToggleBtn');
   const scrubberFill = $('#audioScrubberFill');
   const scrubberBar = $('#audioScrubberBar');
   const curTime = $('#audioCurTime');

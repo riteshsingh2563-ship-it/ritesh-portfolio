@@ -70,16 +70,15 @@ function switchTab(tabName) {
   });
 
   const titles = {
-    overview: 'Overview',
-    profile: 'Profile & Bio',
-    skills: 'Skills & Stack',
-    projects: 'Projects & Ventures',
-    music: 'Music Showcase',
-    resume: 'Resume Manager',
-    messages: 'Contact Messages Inbox',
-    settings: 'Backup & Settings'
+    overview: 'OVERVIEW®',
+    profile: 'PROFILE & BIO®',
+    skills: 'SKILLS & STACK®',
+    projects: 'PROJECTS & VENTURES®',
+    resume: 'RESUME MANAGER®',
+    messages: 'CONTACT INBOX®',
+    settings: 'BACKUP & SETTINGS®'
   };
-  document.getElementById('pageTitle').textContent = titles[tabName] || 'Dashboard';
+  document.getElementById('pageTitle').textContent = titles[tabName] || 'CONTROL PANEL®';
 }
 
 /* ==========================================================================
@@ -97,7 +96,8 @@ async function loadOverview() {
 
     document.getElementById('statProjects').textContent = data.projects.length;
     document.getElementById('statSkills').textContent = data.skills.length;
-    document.getElementById('statMusic').textContent = data.music.length;
+    const statMusicEl = document.getElementById('statMusic');
+    if (statMusicEl && data.music) statMusicEl.textContent = data.music.length;
     document.getElementById('statMessages').textContent = msgs.length;
 
     // Sidebar badge
