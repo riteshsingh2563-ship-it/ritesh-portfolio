@@ -1,0 +1,11 @@
+# Exclude backend server from Vercel static deployment
+server.js
+database/
+functions/
+uploads/
+.env
+.env.example
+*.db
+*.db-shm
+*.db-wal
+*.log
