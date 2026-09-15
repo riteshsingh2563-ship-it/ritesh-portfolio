@@ -1,11 +1,9 @@
 {
   "version": 2,
   "cleanUrls": true,
-  "public": true,
   "rewrites": [
     { "source": "/admin", "destination": "/admin.html" },
-    { "source": "/login", "destination": "/login.html" },
-    { "source": "/api/(.*)", "destination": "http://localhost:3000/api/$1" }
+    { "source": "/login", "destination": "/login.html" }
   ],
   "headers": [
     {
