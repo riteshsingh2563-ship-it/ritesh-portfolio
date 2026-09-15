@@ -85,6 +85,16 @@ function authMiddleware(req, res, next) {
    PUBLIC REST API
    ========================================================================== */
 
+function parseArrayField(val) {
+  if (!val) return [];
+  if (Array.isArray(val)) return val;
+  try {
+    const parsed = JSON.parse(val);
+    if (Array.isArray(parsed)) return parsed;
+  } catch (_) {}
+  return String(val).split(',').map(s => s.trim()).filter(Boolean);
+}
+
 // 1. Full Portfolio Bundle (High Performance single query)
 app.get('/api/portfolio', (req, res) => {
   try {
@@ -97,8 +107,8 @@ app.get('/api/portfolio', (req, res) => {
     const projects = rawProjects.map(p => ({
       ...p,
       featured: Boolean(p.featured),
-      tech: p.tech ? JSON.parse(p.tech) : [],
-      features: p.features ? JSON.parse(p.features) : []
+      tech: parseArrayField(p.tech),
+      features: parseArrayField(p.features)
     }));
 
     res.json({
@@ -339,8 +349,8 @@ app.get('/api/admin/projects', authMiddleware, (req, res) => {
   const projects = raw.map(p => ({
     ...p,
     featured: Boolean(p.featured),
-    tech: p.tech ? JSON.parse(p.tech) : [],
-    features: p.features ? JSON.parse(p.features) : []
+    tech: parseArrayField(p.tech),
+    features: parseArrayField(p.features)
   }));
   res.json(projects);
 });
