@@ -27,22 +27,24 @@ const state = {
     },
     {
       id: "aura-app",
-      name: "Aura Android Application",
-      visualLabel: "AURA / ANDROID APK",
-      category: "Mobile App",
-      statusLabel: "APK Build Ready",
-      description: "A sleek cross-platform lifestyle application packaged and compiled into a standalone Android APK build.",
-      tech: ["Android SDK", "Mobile UI", "Cross-Platform", "APK Build"],
-      downloadUrl: "assets/Aura_Final.apk",
-      downloadLabel: "Download APK (8.5 MB)",
-      githubUrl: "https://github.com/riteshsingh02010",
+      name: "Aura Music — Open Source Player",
+      visualLabel: "AURA MUSIC // OPEN SOURCE",
+      category: "Open Source Android App",
+      statusLabel: "Release APK (26 MB)",
+      description: "An open-source Android music streaming and downloading application. Stream, discover, and download high-quality music completely ad-free with background playback and offline caching.",
+      tech: ["Open Source", "Android APK", "Music Streaming", "Ad-Free", "Offline Download", "Background Audio"],
+      downloadUrl: "assets/Aura-Music.apk",
+      downloadLabel: "Download Aura Music APK (26 MB)",
+      githubUrl: "https://github.com/riteshsingh2563-ship-it/ritesh-portfolio",
       features: [
-        "Packaged standalone Android APK (8.5 MB)",
-        "Fluid touch interactions and mobile gestures",
-        "Self-contained state persistence and offline support"
+        "100% Ad-free streaming and uninterrupted playback",
+        "Direct high-quality music download for offline listening",
+        "Background audio playback with lock screen media controls",
+        "Open-source codebase with lightweight, battery-efficient design",
+        "Clean dark-mode mobile interface with instant search"
       ],
-      details: "Developed as a practical study into native Android deployment, mobile UI design, and packaging workflows.",
-      learningOutcome: "Deep understanding of mobile compilation, asset bundling, and native Android packaging."
+      details: "Aura Music is an open-source, ad-free music application built for music lovers who value privacy, speed, and offline access. It enables users to search, stream, and directly download high-fidelity audio tracks without interruptions, paywalls, or intrusive advertisements.",
+      learningOutcome: "Engineered native Android media services, offline audio caching, and ad-free open-source app architecture."
     },
     {
       id: "rk-fitness",

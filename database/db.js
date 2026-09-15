@@ -219,6 +219,33 @@ function seedDatabase() {
         sort_order: 1
       },
       {
+        id: 'aura-app',
+        title: 'AURA MUSIC',
+        visual_label: 'AURA MUSIC // OPEN SOURCE',
+        category: 'Open Source Mobile App',
+        status: 'Release APK',
+        status_type: 'active',
+        featured: 1,
+        description: 'An open-source Android music streaming and downloading application. Stream, discover, and download high-quality music completely ad-free with background playback and offline caching.',
+        details: 'Aura Music is an open-source, ad-free music application built for music lovers who value privacy, speed, and offline access. It enables users to search, stream, and directly download high-fidelity audio tracks without interruptions, paywalls, or intrusive advertisements. Built with native Android packaging, background audio services, and cached offline storage.',
+        tech: JSON.stringify(['Open Source', 'Android APK', 'Music Streaming', 'Ad-Free', 'Offline Download', 'Background Audio']),
+        image: 'assets/images/aura-app.svg',
+        video_url: '',
+        github_url: 'https://github.com/riteshsingh2563-ship-it/ritesh-portfolio',
+        demo_url: '',
+        download_url: 'assets/Aura-Music.apk',
+        download_label: 'Download Aura Music APK (26 MB)',
+        features: JSON.stringify([
+          '100% Ad-free streaming and uninterrupted playback',
+          'Direct high-quality music download for offline listening',
+          'Background audio playback with lock screen media controls',
+          'Open-source codebase with lightweight, battery-efficient design',
+          'Clean dark-mode mobile interface with instant search'
+        ]),
+        learning_outcome: 'Engineered native Android media services, offline audio caching, and ad-free open-source app architecture.',
+        sort_order: 2
+      },
+      {
         id: 'nexvix-media',
         title: 'NEXVIX MEDIA',
         visual_label: 'NEXVIX / AGENCY',

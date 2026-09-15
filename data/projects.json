@@ -1,50 +1,52 @@
 [
   {
     "id": "aura-app",
-    "name": "Aura App",
-    "visualLabel": "AURA / MOBILE",
-    "category": "Cross-Platform Mobile App",
+    "name": "Aura Music",
+    "visualLabel": "AURA MUSIC // OPEN SOURCE",
+    "category": "Open Source Android App",
     "featured": true,
-    "statusLabel": "Release APK ready",
-    "description": "A high-performance mobile application engineered with React, Vite, Capacitor, and Firebase, packaged as an optimized Android APK.",
-    "whatItDoes": "Delivers fluid reactive mobile interfaces, secure user authentication with Firebase, real-time Firestore database synchronization, and native device capabilities.",
+    "statusLabel": "Release APK Ready (26 MB)",
+    "description": "An open-source Android music streaming and downloading application. Stream, discover, and download high-quality music completely ad-free with background playback and offline caching.",
+    "whatItDoes": "Allows users to search, stream, and directly download high-quality audio tracks completely free of ads, with background audio playback, offline storage, and lock-screen media controls.",
     "tech": [
-      "React",
-      "Capacitor",
-      "Android",
-      "Firebase",
-      "Tailwind CSS",
-      "TypeScript"
+      "Open Source",
+      "Android APK",
+      "Music Streaming",
+      "Ad-Free",
+      "Offline Download",
+      "Background Audio"
     ],
     "tags": [
       "android",
-      "react",
+      "open-source",
+      "music",
       "mobile",
-      "web"
+      "ad-free"
     ],
     "features": [
-      "Native Android build powered by Capacitor bridge",
-      "Firebase Authentication and declarative Firestore rules",
-      "Mobile-first responsive interface with tactile micro-interactions",
-      "Direct download of release-ready Android APK"
+      "100% Ad-free streaming and uninterrupted playback",
+      "Direct high-quality music download for offline listening",
+      "Background audio playback with lock screen media controls",
+      "Open-source codebase with lightweight, battery-efficient design",
+      "Clean dark-mode mobile interface with instant search"
     ],
-    "aiRole": "AI-assisted architecture modeling, security rule auditing, and build automation.",
-    "impact": "Directly deployed and packaged into standalone release Android APK.",
+    "aiRole": "AI-assisted audio buffering algorithms and build automation.",
+    "impact": "Open-source standalone release Android APK (26 MB).",
     "demoUrl": "",
-    "githubUrl": "https://github.com/riteshsingh02010",
-    "downloadUrl": "assets/Aura_Final.apk",
-    "downloadLabel": "Download Android APK (8.4MB)",
+    "githubUrl": "https://github.com/riteshsingh2563-ship-it/ritesh-portfolio",
+    "downloadUrl": "assets/Aura-Music.apk",
+    "downloadLabel": "Download Aura Music APK (26 MB)",
     "screenshots": [
       {
         "src": "assets/images/aura-app.svg",
-        "alt": "Aura Mobile App Overview"
+        "alt": "Aura Music App Overview"
       }
     ],
-    "readmeTitle": "Aura App Architecture",
+    "readmeTitle": "Aura Music Architecture",
     "readmeSections": [
       {
         "heading": "Overview",
-        "text": "Aura is a full-featured cross-platform application utilizing web technologies bundled into native Android targets with hardware acceleration."
+        "text": "Aura Music is an open-source, ad-free Android music application built for music lovers who value privacy, speed, and offline access."
       },
       {
         "heading": "Key Stack",
